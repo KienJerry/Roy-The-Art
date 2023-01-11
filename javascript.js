@@ -51,6 +51,10 @@ const handleScrollHorizontal = () => {
     });
 }
 
+function layouLogin(){
+    location.href = './src/Auth/SignIn/SignIn.html';
+}
+
 const initJavascriptFile = () => {
     openManuNavbar();
     scrollHorizontal();
