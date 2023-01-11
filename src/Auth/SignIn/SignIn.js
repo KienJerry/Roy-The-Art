@@ -15,6 +15,10 @@ function forgotPassword() {
   location.href = "/src/Auth/ForgotPass/ForgotPassWord.html";
 }
 
+function layoutHome() {
+  location.href = "/index.html";
+}
+
 const initJavascriptFile = () => {
   openManuNavbar();
 };

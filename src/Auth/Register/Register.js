@@ -11,6 +11,9 @@ const openManuNavbar = () => {
 function layouLogin() {
   location.href = "/src/Auth/SignIn/SignIn.html";
 }
+function layoutHome() {
+  location.href = "/index.html";
+}
 
 const initJavascriptFile = () => {
   openManuNavbar();

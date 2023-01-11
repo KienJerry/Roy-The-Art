@@ -10,13 +10,6 @@ const openManuNavbar = () => {
   });
 };
 
-function layouRegister() {
-  location.href = "/src/Auth/Register/Register.html";
-}
-function forgotPassword() {
-  location.href = "/src/Auth/ForgotPass/ForgotPassWord.html";
-}
-
 const initJavascriptFile = () => {
   openManuNavbar();
 };
@@ -38,14 +31,25 @@ logininput.forEach((element) => {
   });
 });
 
-//Chuyển trang / giao diện
+//Chuyển giao diện
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const emailValue = email.value.trim();
     if (emailValue == "") {
     } else {
-      forms?.classList?.toggle("active"); //Thêm 1 active
+      forms?.classList?.toggle("active"); //Creat new active
     }
   });
 });
+
+//Change href
+function layouRegister() {
+  location.href = "/src/Auth/Register/Register.html";
+}
+function forgotPassword() {
+  location.href = "/src/Auth/ForgotPass/ForgotPassWord.html";
+}
+function layoutHome() {
+  location.href = "/index.html";
+}
