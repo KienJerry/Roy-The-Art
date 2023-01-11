@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Login</title>
+    <link rel="stylesheet" href="signIn.style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper-body-main">
+      <div class="wrapper-body">
+        <div class="group-form-login">
+          <h1>Welcome back</h1>
+          <form class="form-layout-input">
+            <div class="form-item-children">
+              <label class="p-title-form">Username</label>
+              <input class="type-input" type="text" />
+              <div class="bg-input-focus"></div>
+            </div>
+            <div class="form-item-children">
+              <div class="custom-laber">
+                <label class="p-title-form">Password</label>
+                <label class="p-title-form active" onclick="forgotPassword()">Forgot password</label>
+              </div>
+              <input class="type-input" type="password" />
+              <div class="bg-input-focus"></div>
+            </div>
+            <button class="type-button-submit" type="submit">LOGIN</button>
+            <b>
+              Don’t have account.
+              <span onclick="layouRegister()"> Create new one</span>
+            </b>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper-footer" id="wrapper-footer">
+        <div class="group-footer-items">
+          <div class="line-footer"></div>
+          <div class="logo-footer">
+            <div class="icon-branch">
+              <img
+                class="ic-logo-footer"
+                src="../../../assets/logo-footer.png"
+              />
+            </div>
+            <div class="text-branch">RoytheArt</div>
+          </div>
+        </div>
+        <div class="group-footer-items">
+          <div class="logo-footer">
+            <div class="icon-branch" onclick="layoutHome()">
+              <img src="../../../assets/ic/ic-home-white.svg" />
+            </div>
+          </div>
+          <div class="logo-footer">
+            <div class="icon-branch">
+              <img src="../../../assets/icon-fun.png" />
+            </div>
+          </div>
+          <div class="logo-footer">
+            <div class="icon-branch">
+              <img src="../../../assets/icon-shop.png" />
+            </div>
+          </div>
+          <div class="logo-footer">
+            <div class="icon-branch">
+              <img src="../../../assets/ic/ic-cart-white.svg" />
+            </div>
+          </div>
+          <div class="logo-footer">
+            <div class="icon-branch">
+              <img src="../../../assets/ic/ic-user-white.svg" />
+            </div>
+          </div>
+          <div class="logo-footer">
+            <div
+              id="menuNavbar"
+              class="icon-branch"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <img src="../../../assets/icon-menu.png" />
+            </div>
+          </div>
+          <div class="line-footer"></div>
+        </div>
+      </div>
+      <div class="wrapper-offcanvas-bottom" id="wrapper-offcanvas-bottom">
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-body small">
+            <div class="group-footer-items">
+              <div class="line-footer"></div>
+              <div class="logo-footer">
+                <div class="icon-branch">
+                  <img
+                    class="ic-logo-footer-main"
+                    src="../../../assets/logo-footer-main.png"
+                  />
+                </div>
+                <div class="text-branch">RoytheArt</div>
+              </div>
+            </div>
+            <div class="group-footer-items">
+              <div class="box-footer-nav-items">
+                <div class="footer-nav-items active">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/icon-menu.png"
+                  />
+                  <div class="text-footer-nav">Menu</div>
+                </div>
+                <div class="footer-nav-items">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/ic/ic-home-white.svg"
+                  />
+                  <div class="text-footer-nav">Home</div>
+                </div>
+                <div class="footer-nav-items">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/icon-fun.png"
+                  />
+                  <div class="text-footer-nav">About Roy The Art</div>
+                </div>
+                <div class="footer-nav-items">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/icon-shop.png"
+                  />
+                  <div class="text-footer-nav">Store</div>
+                </div>
+                <div class="footer-nav-items">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/ic/ic-cart-white.svg"
+                  />
+                  <div class="text-footer-nav">Shopping cart</div>
+                </div>
+                <div class="footer-nav-items">
+                  <img
+                    class="icon-footer-nav"
+                    src="../../../assets/ic/ic-user-white.svg"
+                  />
+                  <div class="text-footer-nav">Account</div>
+                </div>
+              </div>
+              <div class="line-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="SignIn.js"></script>
+  </body>
+</html>
