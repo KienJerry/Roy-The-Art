@@ -1,0 +1,26 @@
+@import url(../cpn_LoadingPage.css);
+@import url(../components/LoadingPageStyle/_c-V2-SliderShow.style.css);
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrapper-body-main {
+  background-image: url(../../images/background/bg-loadingPage4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: drop-shadow(-8px 4px 32px rgba(0, 0, 0, 0.25));
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper-body-main {
+    background-image: url(../../images/background/bg-loadingPage5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

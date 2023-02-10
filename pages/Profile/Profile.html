@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy The Art | Profile</title>
+  <link rel="stylesheet" href="../../styles/Pages/_p-profile.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-itemOrther.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-upcomingEvent.style.css">
+</head>
+
+<body onload="myFunction()">
+  <div class="wrapper-body">
+    <div id="header"></div>
+    <div class="container-main-profile">
+      <!-- Menu Drawer -->
+      <div class="item-menu-drawer">
+        <a href="/pages/Profile/Profile.html">
+          <div class="btn-menu active">Profile</div>
+        </a>
+        <a href="/pages/Other/Other.html" style="color: #6B8089;">
+          <div class="btn-menu">Orders</div>
+        </a>
+        <a href="/pages/Favorite/FavoriteItem.html" class="btn-menu">Favorite Item</a>
+        <a href="/pages/Event/Event.html" class="btn-menu">Events</a>
+      </div>
+      <!-- Layout Profile -->
+      <div class="wrapper-layout-profile">
+        <div class="bg-infor-profile">
+          <div class="box-info-descriptions">
+            <img src="../../images/img/avatar-profile.png" alt="avatar" />
+            <div class="txt-profile">
+              <b>example@email.com</b>
+              <p>Address: street, city, country</p>
+              <p>Phone Number</p>
+              <p>Name</p>
+            </div>
+          </div>
+          <a href="/pages/Profile/EditProfile.html" class="btn-edit-profile">Edit Profile</a>
+        </div>
+        <!-- Order -->
+        <div class="wrapper-order">
+          <div class="order-header">
+            <p>Order</p>
+            <div class="view-all">
+              View all
+              <img src="../../images/icon/ic-right-viewall.svg" alt="icon" />
+            </div>
+          </div>
+          <div id="ItemOrther"></div>
+        </div>
+        <!-- Upcoming Event -->
+        <div id="UpcomingEvent"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+    loadScript("../../components/header.html", "header");
+    loadScript("../../components/footer.html", "footer");
+    loadScript("../../components/Orther/ItemOrther.html", "ItemOrther");
+    loadScript("../../components/Profile/UpcomingEvent.html", "UpcomingEvent");
+  }
+</script>
+
+</html>

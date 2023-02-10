@@ -1,0 +1,56 @@
+@import url(../cpn_Collections.css);
+
+.wrapper-layout-Category-Details {
+  padding: 80rem 48rem 80rem 48rem;
+}
+/* BOOKMARKS */
+.wrapper-layout-Category-Details .box-header-Category-details {
+  margin: 40rem 0;
+  display: flex;
+  justify-content: center;
+}
+.box-header-Category-details .bg-layout-box {
+  padding: 8rem 24rem;
+  background: #f3f2f2;
+  border-radius: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+.bg-layout-box p {
+  font-weight: 400;
+  font-size: 20rem;
+  color: #242b2e;
+}
+.bg-layout-box img {
+  width: 200rem;
+  height: 120rem;
+  object-fit: cover;
+}
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  .wrapper-layout-Category-Details {
+    padding: 80rem 32rem 100rem 32rem;
+  }
+  /* BOOKMARKS */
+  .box-header-Category-details .bg-layout-box {
+    width: 100%;
+  }
+  .bg-layout-box p {
+    font-size: 18rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px) {
+  .wrapper-layout-Category-Details {
+    padding: 70rem 16rem 80rem 16rem;
+  }
+  .box-header-Category-details .bg-layout-box {
+    flex-direction: column;
+  }
+  .bg-layout-box img {
+    margin-top: 24rem;
+  }
+}

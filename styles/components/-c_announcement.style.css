@@ -1,0 +1,86 @@
+.bg-list-announcement {
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24rem;
+}
+.bg-list-announcement > .container-item-announcement {
+  padding: 24rem;
+  background: #ffffff;
+  border: 1rem solid rgba(38, 37, 30, 0.12);
+  box-shadow: 0rem 8rem 16rem rgba(0, 0, 0, 0.04);
+  border-radius: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-item-announcement > .wrapper-descriptions-announcement {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+  margin-bottom: 24rem;
+  align-items: center;
+}
+.wrapper-descriptions-announcement > img {
+  width: 160rem;
+  height: 160rem;
+  object-fit: cover;
+  border-radius: 7rem;
+}
+.wrapper-descriptions-announcement > .box-tlt-descriptions {
+  color: #242b2e;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.wrapper-descriptions-announcement > .box-tlt-descriptions p {
+  font-size: 12rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.wrapper-descriptions-announcement > .box-tlt-descriptions .box-tlt-line {
+  background: #be8637;
+  height: 2rem;
+  width: 100%;
+}
+.wrapper-descriptions-announcement > .box-tlt-descriptions h1 {
+  font-weight: 700;
+  font-size: 16rem;
+}
+.wrapper-descriptions-announcement > .box-tlt-descriptions h2 {
+  font-weight: 400;
+  font-size: 16rem;
+}
+.container-item-announcement > .btn-view-now {
+  font-weight: 600;
+  font-size: 16rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: #be8637;
+  border-radius: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg-list-announcement {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-item-announcement > .wrapper-descriptions-announcement {
+    flex-direction: column;
+    row-gap: 12rem;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .bg-list-announcement {
+    grid-template-columns: 1fr;
+  }
+  .bg-list-announcement > .container-item-announcement.active {
+    display: none;
+  }
+}

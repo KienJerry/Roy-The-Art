@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Collection Category Details</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Pages/_p-collectionsCategoryDetails.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-layout-Category-Details">
+        <div id="options"></div>
+        <div class="box-header-Category-details">
+          <div class="bg-layout-box">
+            <p>
+              ✦ FULLSET GENSHIN IMPACT REDESIGN BOOKMARKS Vol 1 ✦
+              <br />
+              A full-set of the series includes 12 bookmarks of 12 characters.
+            </p>
+            <img
+              src="../../images/img/genshinImpact.png"
+              alt="Logo GenshinImpact"
+            />
+          </div>
+        </div>
+        <div id="listCategory"></div>
+        <div id="relateCategory"></div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript(
+        "../../components/Collections/OptionCollections.html",
+        "options"
+      );
+      loadScript(
+        "../../components/Collections/listCategoryCollections.html",
+        "listCategory"
+      );
+      loadScript(
+        "../../components/Collections/ListRelateCollections.html",
+        "relateCategory"
+      );
+    }
+  </script>
+</html>

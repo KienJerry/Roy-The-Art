@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy The Art | AnnouncementDetail</title>
+  <link rel="stylesheet" href="../../styles/Pages/_p-announcementDetail.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-upcomingEvents.style.css" />
+</head>
+
+<body onload="myFunction()">
+  <div class="wrapper-body">
+    <div id="header"></div>
+    <div class="wrapper-container-Detail">
+      <div class="bg-posts">
+        <div class="layout-post">
+          <small>🎉 NEW EVENT</small>
+          <h1>THE STREET SYMPHONY</h1>
+          <span>A full-set Encanto includes 15 photo prints of beautiful and
+            amazing characters in the show are now available!</span>
+        </div>
+        <div class="layout-post">
+          <img src="../../images/img/Announcements-hot.png" alt="Announcements" />
+          <small>Note: Lorem ipsum dolor sit amet consectetur.</small>
+        </div>
+        <h2>Where and when</h2>
+        <div class="bg-location">
+          <img src="../../images/icon/ic-date.svg" alt="icon">
+          <div class="descriptions-location">
+            <p>Date and time</p>
+            <span class="active">Sat, February 4, 2023, 8:30 AM – 9:30 AM Indochina Time Vietnam Time</span>
+          </div>
+        </div>
+        <div class="bg-location">
+          <img src="../../images/icon/ic-location.svg" alt="icon">
+          <div class="descriptions-location">
+            <p>Location</p>
+            <span class="active">Online via Zoom See Confirmation Email for Zoom Link HCM, Thành phố Hồ Chí Minh
+              71100</span>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.3612752806407!2d108.04680561534393!3d12.689826891041196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d7f6d693f7%3A0x4c3b0d29f8469fbc!2zMTQyIFBoYW4gQ2h1IFRyaW5oLCBUw6JuIEzhu6NpLCBUaMOgbmggcGjhu5EgQnXDtG4gTWEgVGh14buZdCwgxJDhuq9rIEzhuq9rLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1675733246820!5m2!1svi!2s"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="btn-join-event">JOIN EVENT</div>
+        <div class="layout-post">
+          <h2>About event</h2>
+          <span>Lorem ipsum dolor sit amet consectetur. Turpis pharetra turpis aliquet tellus nullam adipiscing gravida.
+            In sed justo enim enim feugiat. Dolor auctor erat faucibus et. Faucibus ultrices ac massa sollicitudin nisi.
+            Sagittis cursus auctor eu fermentum nisl.</span>
+        </div>
+        <div class="layout-post">
+          <h2>About speaker</h2>
+          <span>Lorem ipsum dolor sit amet consectetur. Turpis pharetra turpis aliquet tellus nullam adipiscing gravida.
+            In sed justo enim enim feugiat. Dolor auctor erat faucibus et. Faucibus ultrices ac massa sollicitudin nisi.
+            Sagittis cursus auctor eu fermentum nisl.</span>
+        </div>
+        <div class="layout-post">
+          <div class="header-child-post">
+            <h2>Register for the event</h2>
+            <small class="active">20 seats left</small>
+          </div>
+          <small>This event is free</small>
+        </div>
+      </div>
+      <div class="upcomming-events">
+        <div class="header-comming-events">
+          <h2>Join Event</h2>
+          <div class="btn-join-event">JOIN EVENT</div>
+        </div>
+        <h3>Upcoming event</h3>
+        <div id="upcomingEvent"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+    loadScript("../../components/header.html", "header");
+    loadScript("../../components/footer.html", "footer");
+    loadScript(
+      "../../components/Event/upcomingEvent.html",
+      "upcomingEvent"
+    );
+  }
+</script>
+
+</html>

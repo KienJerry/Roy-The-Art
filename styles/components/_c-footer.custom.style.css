@@ -1,0 +1,135 @@
+.section-footer-page {
+  margin-top: 50rem;
+  padding: 48rem 90rem;
+  background: #f3f2f2;
+}
+
+.wrapper-footer-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-footer-page .group-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24rem;
+}
+
+.section-footer-page .wrapper-footer-page.mt-4 {
+  padding-top: 30rem;
+}
+
+.group-footer .img-logo-gr-footer {
+  width: 158.5rem;
+  height: 32rem;
+  object-fit: cover;
+}
+
+.group-footer .txt-subscribe-main {
+  font-weight: 600;
+  font-size: 20rem;
+  color: #242b2e;
+}
+
+.group-footer .txt-subscribe-sub {
+  font-weight: 400;
+  font-size: 14rem;
+  color: #6b8089;
+}
+
+.group-footer .form-footer {
+  display: flex;
+  column-gap: 16rem;
+  align-items: center;
+}
+
+.form-footer .input-footer {
+  padding: 8rem 16rem;
+  background: #ffffff;
+  border: 1rem solid rgba(86, 79, 43, 0.25);
+  border-radius: 7rem;
+  outline: none;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #6b8089;
+}
+
+.form-footer .input-footer::placeholder {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #6b8089;
+}
+
+.form-footer .btn-footer {
+  background: #be8637;
+  border-radius: 7rem;
+  padding: 8rem 16rem;
+  color: #fff;
+  font-size: 16rem;
+}
+
+.group-footer .box-footer-social {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16rem;
+}
+
+.group-footer .txt-copyright {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #6b8089;
+}
+.group-footer .txt-bottom {
+  font-size: 16rem;
+  padding-left: 10rem;
+}
+.group-footer .ic-logo-items--footer {
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper-footer-page {
+    max-width: 862rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-footer-page {
+    max-width: 662rem;
+    column-gap: 32rem;
+  }
+
+  .group-footer .txt-subscribe-main {
+    font-size: 16rem;
+  }
+
+  .group-footer .txt-subscribe-sub {
+    font-size: 12rem;
+  }
+
+  .group-footer .txt-copyright {
+    font-size: 12rem;
+  }
+
+  .group-footer .txt-bottom {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .wrapper-footer-page {
+    flex-direction: column;
+    row-gap: 32rem;
+  }
+
+  .wrapper-footer-page .group-footer {
+    align-items: center;
+  }
+
+  .group-footer .box-footer-social {
+    justify-content: center;
+  }
+}

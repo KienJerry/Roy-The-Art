@@ -1,0 +1,69 @@
+.paginate-reviews ul {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 8px;
+    column-gap: .5rem;
+}
+
+.paginate-reviews ul li {
+    color: #B1B1B1;
+    list-style: none;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.paginate-reviews ul li.numb {
+    list-style: none;
+    height: 35px;
+    width: 35px;
+    margin: 0 3px;
+    line-height: 35px;
+    border-radius: 50%;
+}
+
+.paginate-reviews ul li.numb.first {
+    margin: 0px 3px 0 -5px;
+}
+
+.paginate-reviews ul li.numb.last {
+    margin: 0px -5px 0 3px;
+}
+
+.paginate-reviews ul li.dots {
+    font-size: 16px;
+    cursor: default;
+}
+
+.paginate-reviews ul li.btn {
+    padding: 0 8px;
+    border-radius: 50px;
+}
+
+.paginate-reviews ul li:first-child,
+.paginate-reviews ul li:last-child {
+    color: #BE8637;
+    background: #E6E6E6;
+}
+
+.paginate-reviews li.active {
+    color: #BE8637;
+    background: #E6E6E6;
+}
+
+.icon-paginate {
+    width: 19px;
+    height: 19px;
+}
+
+@media only screen and (max-width: 500px) {
+    .paginate-reviews ul {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+}

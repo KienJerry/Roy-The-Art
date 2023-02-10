@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy The Art | Other</title>
+  <link rel="stylesheet" href="../../styles/Pages/_p-profile.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-itemOrther.style.css" />
+</head>
+
+<body onload="myFunction()">
+  <div class="wrapper-body">
+    <div id="header"></div>
+    <div class="container-main-profile">
+      <!-- Menu Drawer -->
+      <div class="item-menu-drawer">
+        <a href="/pages/Profile/Profile.html" style="color: #6b8089">
+          <div class="btn-menu">Profile</div>
+        </a>
+        <a href="/pages/Other/Other.html">
+          <div class="btn-menu active">Orders</div>
+        </a>
+        <a href="/pages/Favorite/FavoriteItem.html" class="btn-menu">Favorite Item</a>
+        <a href="/pages/Event/Event.html" class="btn-menu">Events</a>
+      </div>
+      <div class="wrapper-layout-profile">
+        <div id="ItemOrther"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+    loadScript("../../components/header.html", "header");
+    loadScript("../../components/footer.html", "footer");
+    loadScript("../../components/Orther/ItemOrther.html", "ItemOrther");
+  }
+</script>
+
+</html>

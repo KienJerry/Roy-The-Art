@@ -1,0 +1,47 @@
+.wrapper-select-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper-select-option .form-input-option {
+  position: relative;
+}
+
+.form-input-option .ic-down-select {
+  position: absolute;
+  right: 15rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.wrapper-select-option .list-items-option {
+  transform: translateY(-80rem) scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  background: #fff;
+  width: 100%;
+  height: 200rem;
+}
+
+.wrapper-select-option .list-items-option.active {
+  transform: translateY(0rem) scale(1);
+  opacity: 1;
+  visibility: visible;
+  height: 200rem;
+  overflow-y: scroll;
+}
+
+.items-option {
+  padding: 5rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  input#input-option-size-date,
+  input#input-option-size {
+    width: 135rem;
+  }
+}

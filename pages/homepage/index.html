@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/homepage.css">
+    <script src="../../assets/loadhtml.js"></script>
+    <script>
+        function myFunction() {
+            loadScript("../../components/footer.html", "footer");
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <div class="wrapper-body">
+        <div id="header">
+            <div id="wrapper-header" class="wrapper-header laptop">
+                <div class="group-header">
+                    <div class="line-header"></div>
+                    <a href="/pages/homepage/index.html" class="box-brand">
+                        <img src="../public/logo-header.svg" alt="" />
+                    </a>
+                </div>
+                <div class="group-header">
+                    <div class="box-navbar">
+                        <a href="/pages/homepage/index.html" class="nav-items"><img src="../public/nav-home.svg" /></a>
+                        <a href="/pages/About/About.html" class="nav-items"><img src="../public/nav-funny.svg" /></a>
+                        <a href="/pages/Shop/Shop.html" class="nav-items"><img src="../public/nav-shop.png" /></a>
+                        <a href="/pages/Cart/ShoppingCart.html" class="nav-items"><img
+                                src="../public/nav-cart.svg" /></a>
+                        <a href="/pages/Profile/Profile.html" class="nav-items"><img src="../public/nav-user.svg" /></a>
+                        <div class="nav-items"><img src="../public/nav-menu.svg" /></div>
+                    </div>
+                    <div class="line-header"></div>
+                </div>
+            </div>
+
+            <div class="wrapper-header mobile">
+                <div class="group-header">
+                    <div class="line-header"></div>
+                    <a href="/pages/homepage/index.html" class="box-brand">
+                        <img src="../public/logo-header.svg" alt="" />
+                    </a>
+                </div>
+                <div class="group-header">
+                    <div class="box-navbar">
+                        <div class="nav-items" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                            aria-controls="offcanvasTop">
+                            <img src="../public/nav-menu.svg" />
+                        </div>
+                    </div>
+                    <div class="line-header"></div>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="wrapper-header-responsive">
+                    <div class="d-flex justify-content-center">
+                        <img src="../public/logo-header.svg" alt="" />
+                    </div>
+                    <div class="box-navbar-responsive">
+                        <a href="/pages/homepage/index.html" class="nav-items-responsive active">
+                            <img class="image-items-responsive" src="../public/nav-home.svg" /> Home
+                        </a>
+                        <a href="/pages/About/About.html" class="nav-items-responsive">
+                            <img class="image-items-responsive" src="../public/nav-funny.svg" />
+                            About
+                        </a>
+                        <a href="/pages/Shop/Shop.html" class="nav-items-responsive">
+                            <img class="image-items-responsive" src="../public/nav-shop.svg" />
+                            Store
+                        </a>
+                        <a href="/pages/Cart/ShoppingCart.html" class="nav-items-responsive">
+                            <img class="image-items-responsive" src="../public/nav-cart.svg" />
+                            Shopping cart
+                        </a>
+                        <a href="/pages/Profile/Profile.html" class="nav-items-responsive">
+                            <img class="image-items-responsive" src="../public/nav-user.svg" />
+                            Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-navigation-homepage">
+            <a href="/pages/Collections/Collections.html" class="group-navigation-homepage">
+                <img src="../../images/homepage/ic-collections-home.svg" alt="">
+                <div class="txt-navigation-homepage">Collections</div>
+            </a>
+            <a href="/pages/Shop/Shop.html" class="group-navigation-homepage">
+                <img src="../../images/homepage/ic-shop-home.svg" alt="">
+                <div class="txt-navigation-homepage">Our Shop</div>
+            </a>
+            <a href="/pages/Announcement/Announcement.html" class="group-navigation-homepage">
+                <img src="../../images/homepage/ic-star-home.svg" alt="">
+                <div class="txt-navigation-homepage">Announcements</div>
+            </a>
+            <a href="/pages/About/About.html" class="group-navigation-homepage">
+                <img src="../../images/homepage/ic-funny-home.svg" alt="">
+                <div class="txt-navigation-homepage">About Artist (Roy Trinh)</div>
+            </a>
+        </div>
+        <div id="carouselExampleControls" class="wrapper-banner-homepage carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-content-homepage">
+                        <div class="parent-content-homepage">
+                            <div class="txt-main">Mystical</div>
+                            <div class="group-description">
+                                <div class="txt-description">Description</div>
+                                <div class="line"></div>
+                                <div class="txt-sub">A full-set Encanto includes 15 photo prints of beautiful and
+                                    amazing
+                                    characters
+                                    in the show are now available!</div>
+                                <div class="box-description-image">
+                                    <img class="image-description" src="../../images/homepage/sub-image.png" />
+                                    <img class="image-description" src="../../images/homepage/sub-image.png" />
+                                    <img class="image-description" src="../../images/homepage/sub-image.png" />
+                                    <img class="image-description" src="../../images/homepage/sub-image.png" />
+                                    <img class="image-description" src="../../images/homepage/sub-image.png" />
+                                </div>
+                            </div>
+                            <div class="group-instagram">
+                                <div class="box-instagram">
+                                    <img src="../../images/homepage/ic-instagram.svg" alt="">
+                                    <div class="txt-instagram">Instagram</div>
+                                </div>
+                                <div class="txt-date">Uploaded on 23 June 2022</div>
+                            </div>
+                            <div class="group-view-collection">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-view-collection.svg" />
+                                <div class="txt-view">View Collection</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-image-homepage">
+                        <img class="image-banner-homepage" src="../../images/homepage/bg-homepage.png" alt="">
+                        <div class="group-redirect-shop">
+                            <div class="line"></div>
+                            <div class="box-redirect-shop">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-redirect-shop.svg" />
+                                <div class="parent-shop-now">
+                                    <div class="txt-shop-now">Shop Now</div>
+                                    <img src="../../images/homepage/ic-logo-redirect.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-content-homepage">
+                        <div class="parent-content-homepage">
+                            <div class="txt-main">Mystical</div>
+                            <div class="group-description">
+                                <div class="txt-description">Description</div>
+                                <div class="line"></div>
+                                <div class="txt-sub">A full-set Encanto includes 15 photo prints of beautiful and
+                                    amazing
+                                    characters
+                                    in the show are now available!</div>
+                                <div class="box-description-image">
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                </div>
+                            </div>
+                            <div class="group-instagram">
+                                <div class="box-instagram">
+                                    <img src="../../images/homepage/ic-instagram.svg" alt="">
+                                    <div class="txt-instagram">Instagram</div>
+                                </div>
+                                <div class="txt-date">Uploaded on 23 June 2022</div>
+                            </div>
+                            <div class="group-view-collection">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-view-collection.svg" />
+                                <div class="txt-view">View Collection</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-image-homepage">
+                        <img class="image-banner-homepage" src="../../images/homepage/bg-homepage-2.png" alt="">
+                        <div class="group-redirect-shop">
+                            <div class="line"></div>
+                            <div class="box-redirect-shop">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-redirect-shop.svg" />
+                                <div class="parent-shop-now">
+                                    <div class="txt-shop-now">Shop Now</div>
+                                    <img src="../../images/homepage/ic-logo-redirect.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-content-homepage">
+                        <div class="parent-content-homepage">
+                            <div class="txt-main">Mystical</div>
+                            <div class="group-description">
+                                <div class="txt-description">Description</div>
+                                <div class="line"></div>
+                                <div class="txt-sub">A full-set Encanto includes 15 photo prints of beautiful and
+                                    amazing
+                                    characters
+                                    in the show are now available!</div>
+                                <div class="box-description-image">
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                    <img src="../../images/homepage/sub-image.png" />
+                                </div>
+                            </div>
+                            <div class="group-instagram">
+                                <div class="box-instagram">
+                                    <img src="../../images/homepage/ic-instagram.svg" alt="">
+                                    <div class="txt-instagram">Instagram</div>
+                                </div>
+                                <div class="txt-date">Uploaded on 23 June 2022</div>
+                            </div>
+                            <div class="group-view-collection">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-view-collection.svg" />
+                                <div class="txt-view">View Collection</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-image-homepage">
+                        <img class="image-banner-homepage" src="../../images/homepage/bg-homepage-3.png" alt="">
+                        <div class="group-redirect-shop">
+                            <div class="line"></div>
+                            <div class="box-redirect-shop">
+                                <img class="bg-btn-view" src="../../images/homepage/btn-redirect-shop.svg" />
+                                <div class="parent-shop-now">
+                                    <div class="txt-shop-now">Shop Now</div>
+                                    <img src="../../images/homepage/ic-logo-redirect.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-arrow-left" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <img class="arrow-icon" src="../../images/homepage/arrow-banner-left.svg" />
+            </div>
+            <div class="btn-arrow-right" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <img class="arrow-icon" src="../../images/homepage/arrow-banner-right.svg" />
+            </div>
+        </div>
+
+        <div class="wrapper-other-collections">
+            <div class="txt-other-collections-main">Other Collections</div>
+            <div class="group-other-collections">
+                <div class="box-other-collections">
+                    <img class="image-other-collections" src="../../images/homepage/image-other-collections.png" />
+                </div>
+                <div class="box-other-collections">
+                    <img class="image-other-collections" src="../../images/homepage/image-other-collections.png" />
+                </div>
+                <div class="box-other-collections">
+                    <img class="image-other-collections" src="../../images/homepage/image-other-collections.png" />
+                </div>
+                <div class="box-other-collections">
+                    <img class="image-other-collections" src="../../images/homepage/image-other-collections.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-line">
+            <div class="line"></div>
+        </div>
+
+        <div class="wrapper-announcements">
+            <div class="group-announcements-left">
+                <div class="box-announcements-left">
+                    <div class="txt-announcements-right-title">Announcements:</div>
+                    <div class="row-announcements">
+                        <div class="parent-announcements">
+                            <div class="items-announcements">
+                                <img class="image-announcements" src="../../images/homepage/box-announ.png" />
+                                <div>
+                                    <div class="txt-items-announcements-main">🎉 ANNOUNCEMENT</div>
+                                    <div class="line"></div>
+                                    <div class="txt-items-announcements-sub">A full-set Encanto includes 15 photo prints
+                                        of beautiful and amazing characters
+                                        in the show are now available!</div>
+                                </div>
+                            </div>
+                            <div class="btn-announcements">SHOP NOW</div>
+                        </div>
+                        <div class="parent-announcements">
+                            <div class="items-announcements">
+                                <img src="../../images/homepage/box-announ.png" />
+                                <div>
+                                    <div class="txt-items-announcements-main">🎉 ANNOUNCEMENT</div>
+                                    <div class="line"></div>
+                                    <div class="txt-items-announcements-sub">A full-set Encanto includes 15 photo prints
+                                        of beautiful and amazing characters
+                                        in the show are now available!</div>
+                                </div>
+                            </div>
+                            <div class="btn-announcements">SHOP NOW</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-announcements-left">
+                    <div class="txt-announcements-right-title">Our Socials:</div>
+                    <div class="row-announcements">
+                        <div class="parent-social">
+                            <div class="d-flex">
+                                <img src="../../images/homepage/social-instagram.svg" />
+                                <div class="ms-2">
+                                    <div>Instagram</div>
+                                    <div class="txt-social-sub">@RoytheArt</div>
+                                </div>
+                            </div>
+                            <div class="btn-social">VIEW</div>
+                        </div>
+                        <div class="parent-social">
+                            <div class="d-flex">
+                                <img src="../../images/homepage/social-etsy.svg" />
+                                <div class="ms-2">
+                                    <div>Instagram</div>
+                                    <div class="txt-social-sub">@RoytheArt</div>
+                                </div>
+                            </div>
+                            <div class="btn-social">VIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-announcements-right">
+                <img class="image-announcements-right" src="../../images/homepage/image-announ.svg" />
+                <div class="box-announcements-right">
+                    <div class="txt-announcements-right-main">20% </br>OFF 🎉</div>
+                    <div class="txt-announcements-right-sub">Get discount code in our website</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            document.getElementById('wrapper-header').setAttribute('style', 'box-shadow: none');
+        </script>
+</body>
+
+</html>

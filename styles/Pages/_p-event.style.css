@@ -1,0 +1,95 @@
+@import url(../html.custom.style.css);
+.wrapper-main-event {
+  padding: 100rem 24rem 0 24rem;
+  position: relative;
+}
+/* Header */
+.wrapper-main-event > .header-main-event {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.header-main-event > .event-header {
+  border: 1rem solid #be8637;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+  width: auto;
+}
+.header-main-event > .event-header img {
+  width: 21rem;
+  height: 21rem;
+  object-fit: contain;
+}
+.header-main-event > .event-header span {
+  font-weight: 600;
+  font-size: 28rem;
+  color: #be8637;
+}
+.header-main-event > .line-header {
+  background: #6b8089;
+  width: 100%;
+  height: 1rem;
+  flex: 1;
+  margin: 0 40rem;
+}
+.header-main-event > .btn-header-events {
+  display: flex;
+  gap: 8rem;
+}
+.btn-header-events > .btn-item {
+  background: #f3f2f2;
+  border-radius: 7rem;
+  padding: 4rem 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #242b2e;
+}
+
+/* UpCommit */
+.wrapper-listItem-event > .tlt-header-child-item {
+  display: flex;
+  align-items: center;
+  margin: 32rem 0;
+}
+.wrapper-listItem-event > .tlt-header-child-item > .line-txt-child {
+  width: 100%;
+  flex: 1;
+  height: 1rem;
+  background: rgba(86, 79, 43, 0.25);
+}
+.wrapper-listItem-event > .tlt-header-child-item > p {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #6b8089;
+  padding: 0 32rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-main-event > .event-header span {
+    font-size: 16rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  /* Header */
+  .wrapper-main-event {
+    padding: 100rem 16rem 0 16rem;
+  }
+  .wrapper-main-event > .header-main-event {
+    flex-wrap: wrap;
+    row-gap: 12rem;
+  }
+  .header-main-event > .btn-header-events {
+    width: 100%;
+    justify-content: center;
+  }
+  .header-main-event > .line-header {
+    margin: 0 0 0 20rem;
+  }
+}

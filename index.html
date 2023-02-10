@@ -1,258 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roy The Art</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="wrapper-body-main">
-      <div class="wrapper-body">
-        <div class="wrapper-body-nav">
-          <!-- Menu Desktop -->
-          <div class="group-body-nav desk">
-            <div class="box-body-nav">
-              <div class="item-body-icon"></div>
-              <div class="item-body-nav">Mythical</div>
-            </div>
-            <div class="box-body-nav">
-              <div class="item-body-icon active"></div>
-              <div class="item-body-nav active">Genshin Impact</div>
-            </div>
-            <div class="box-body-nav">
-              <div class="item-body-icon"></div>
-              <div class="item-body-nav">Disney</div>
-            </div>
-            <div class="box-body-nav">
-              <div class="item-body-icon"></div>
-              <div class="item-body-nav">Fanart</div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roy The Art</title>
+  <link rel="stylesheet" href="./styles/Pages/_p-index.style.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
 
-          <!-- Menu Mobile - tablet -->
-          <div class="group-body-nav tab">
-            <div class="box-body-nav">
-              <div class="item-body-icon active"></div>
-              <div class="item-body-nav active">Genshin Impact</div>
-            </div>
-            <div class="btn-switch-sliders">
-              <img src="./assets/ic/ic-to-right-sliders.svg" alt="ic-btn-next">
-            </div>
-          </div>
+<body>
+  <div class="wrapper-body-main">
+    <!-- Desktop -->
+    <div class="wrapper-body des">
+      <!-- Navbar Menu -->
+      <div class="wrapper-body-nav">
+        <div class="box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Mythical
         </div>
-
-        <!-- Main -->
-        <div class="wrapper-body-content">
-          <div class="group-body-content-abouts">
-            <div class="box-body-content-abouts">
-              <div class="text-title-main">Genshin Impact</div>
-              <div class="d-flex">
-                <div class="btn-view-collection">View This Collection</div>
-              </div>
-              <div class="parent-title-sub">
-                <img src="assets/icon-rectangle.png" />
-                <div>
-                  A full-set Encanto includes 15 photo prints of beautiful and
-                  amazing characters in the show are now available!
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="group-body-content-items">
-            <div class="parent-items-menu-collection">
-              <div class="arrow-left" id="arrowLeft">
-                <img src="./assets/arrow-left.png" />
-              </div>
-              <div class="items-menu-collection">
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections3.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections4.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections3.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections4.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections3.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections4.png" />
-                  </div>
-                </div>
-                <div class="item-collection">
-                  <div>
-                    <img src="./assets/Collections2.png" />
-                  </div>
-                </div>
-              </div>
-              <div class="arrow-right" id="arrowRight">
-                <img src="./assets/arrow-right.png" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <a href="/" class="box-body-nav active">
+          <img class="active" src="./images/pointer-nav.png" alt="pointer">
+          Genshin Impact
+        </a>
+        <a href="/pages/LoadingPage/Disney.html" class="box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Disney
+        </a>
+        <a href="/pages/LoadingPage/Fanart.html" class="box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Fanart
+        </a>
       </div>
-      <div class="wrapper-footer" id="wrapper-footer">
-        <div class="group-footer-items">
-          <div class="line-footer"></div>
-          <div class="logo-footer">
-            <div class="icon-branch">
-              <img class="ic-logo-footer" src="./assets/logo-footer.png" />
-            </div>
-            <div class="text-branch">RoytheArt</div>
+
+      <!-- Main -->
+      <div class="wrapper-body-content">
+        <div class="bg-clip"></div>
+        <div class="group-body-content-abouts">
+          <h1>Genshin Impact</h1>
+          <div class="btn-view-collection">VIEW THIS COLLECTION</div>
+          <div class="parent-title-sub">
+            <img src="./images/icon-rectangle.png" alt="rectangle">
+            <span>A full-set Encanto includes 15 photo prints of beautiful and amazing characters in the
+              show are now available!</span>
           </div>
-        </div>
-        <div class="group-footer-items">
-          <div class="logo-footer active">
-            <div class="icon-branch">
-              <img src="./assets/ic/ic-home-white.svg" />
-            </div>
-          </div>
-          <div class="logo-footer active">
-            <div class="icon-branch">
-              <img src="./assets/icon-fun.png" />
-            </div>
-          </div>
-          <div class="logo-footer active">
-            <div class="icon-branch">
-              <img src="./assets/icon-shop.png" />
-            </div>
-          </div>
-          <div class="logo-footer active">
-            <div class="icon-branch">
-              <img src="./assets/ic/ic-cart-white.svg" />
-            </div>
-          </div>
-          <div class="logo-footer active">
-            <div class="icon-branch" onclick="layouLogin()">
-              <img src="./assets/ic/ic-user-white.svg" />
-            </div>
-          </div>
-          <div class="logo-footer">
-            <div
-              id="menuNavbar"
-              class="icon-branch"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasBottom"
-              aria-controls="offcanvasBottom"
-            >
-              <img src="./assets/icon-menu.png" />
-            </div>
-          </div>
-          <div class="line-footer"></div>
-        </div>
-      </div>
-      <div class="wrapper-offcanvas-bottom" id="wrapper-offcanvas-bottom">
-        <div
-          class="offcanvas offcanvas-bottom"
-          tabindex="-1"
-          id="offcanvasBottom"
-          aria-labelledby="offcanvasBottomLabel"
-        >
-          <div class="offcanvas-body small">
-            <div class="group-footer-items">
-              <div class="line-footer"></div>
-              <div class="logo-footer">
-                <div class="icon-branch">
-                  <img
-                    class="ic-logo-footer-main"
-                    src="./assets/logo-footer-main.png"
-                  />
+          <div class="slidershow-items">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/bg-main.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
                 </div>
-                <div class="text-branch">RoytheArt</div>
-              </div>
-            </div>
-            <div class="group-footer-items">
-              <div class="box-footer-nav-items">
-                <div class="footer-nav-items active">
-                  <img class="icon-footer-nav" src="./assets/icon-menu.png" />
-                  <div class="text-footer-nav">Menu</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections2.png" alt="img collections" />
+                  <div class="font-img">
+                    <p>LiYing</p>
+                  </div>
                 </div>
-                <div class="footer-nav-items">
-                  <img
-                    class="icon-footer-nav"
-                    src="./assets/ic/ic-home-white.svg"
-                  />
-                  <div class="text-footer-nav">Home</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections3.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
                 </div>
-                <div class="footer-nav-items">
-                  <img class="icon-footer-nav" src="./assets/icon-fun.png" />
-                  <div class="text-footer-nav">About Roy The Art</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections4.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
                 </div>
-                <div class="footer-nav-items">
-                  <img class="icon-footer-nav" src="./assets/icon-shop.png" />
-                  <div class="text-footer-nav">Store</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections3.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
                 </div>
-                <div class="footer-nav-items">
-                  <img
-                    class="icon-footer-nav"
-                    src="./assets/ic/ic-cart-white.svg"
-                  />
-                  <div class="text-footer-nav">Shopping cart</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections4.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
                 </div>
-                <div class="footer-nav-items">
-                  <img
-                    class="icon-footer-nav"
-                    src="./assets/ic/ic-user-white.svg"
-                  />
-                  <div class="text-footer-nav">Account</div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections2.png" alt="img collections" />
+                  <p>LiYing</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections2.png" alt="img collections" />
+                  <p>LiYing</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections2.png" alt="img collections" />
+                  <p>LiYing</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections3.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections4.png" alt="img collections" />
+                  <p>Sailor Scout Fanart</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/Collections2.png" alt="img collections" />
+                  <p>LiYing</p>
                 </div>
               </div>
-              <div class="line-footer"></div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="./images/arrow-right.png" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./images/arrow-left.png" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <script src="javascript.js"></script>
-  </body>
+    <!-- Tablet  -->
+    <div class="tab-wrapper-body tab" id="tab-wrapper-body">
+      <div class="tab-bg-clip"></div>
+      <div class="tab-group-body-content-abouts">
+        <h1>Genshin Impact</h1>
+        <div class="tab-btn-view-collection">VIEW THIS COLLECTION</div>
+        <div class="tab-parent-title-sub">
+          <img src="./images/icon-rectangle.png" alt="rectangle">
+          <span>A full-set Encanto includes 15 photo prints of beautiful and amazing characters in the
+            show are now available!</span>
+        </div>
+        <div class="slidershow-items">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/bg-main.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections2.png" alt="img collections" />
+                <div class="font-img">
+                  <p>LiYing</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections3.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections4.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections3.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections4.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections2.png" alt="img collections" />
+                <p>LiYing</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections2.png" alt="img collections" />
+                <p>LiYing</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections2.png" alt="img collections" />
+                <p>LiYing</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections3.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections4.png" alt="img collections" />
+                <p>Sailor Scout Fanart</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/Collections2.png" alt="img collections" />
+                <p>LiYing</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="./images/arrow-right.png" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./images/arrow-left.png" />
+          </div>
+        </div>
+        <div class="tab-wrapper-body-nav">
+          <div class="tab-box-body-nav">
+            <img class="tab-pointer" src="./images/pointer-nav.png" alt="pointer">
+            Genshin Impact
+            <img id="btnNavMenu" class="tab-next-navmenu" src="./images/icon/ic-to-right-sliders.svg"
+              alt="ic-btn-next" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tablet Mobile Show Menu -->
+    <div id="show-tab-wrapper-body-nav" class="show-tab-wrapper-body-nav">
+      <div class="show-tab-bg-clip"></div>
+      <div class="show-tab-bg-body-nav" id="show-tab-bg-body-nav">
+        <div class="show-tab-box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Mythical
+        </div>
+        <a href="/" class="show-tab-box-body-nav active">
+          <img class="active" src="./images/pointer-nav.png" alt="pointer">
+          Genshin Impact
+        </a>
+        <a href="/pages/LoadingPage/Disney.html" class="show-tab-box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Disney
+        </a>
+        <a href="/pages/LoadingPage/Fanart.html" class="show-tab-box-body-nav">
+          <img src="./images/pointer-nav.png" alt="pointer">
+          Fanart
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="wrapper-footer" id="wrapper-footer">
+      <div class="group-footer-items">
+        <div class="line-footer"></div>
+        <img alt="icon item" class="img-logo-branch" class="ic-logo-footer" src="./images/logo-footer.png" />
+        <p>RoytheArt</p>
+      </div>
+      <div class="group-footer-items">
+        <a class="active" href="/pages/homepage/index.html">
+          <img alt="icon item" src="./images/icon/ic-home-white.svg" />
+        </a>
+        <a class="active" href="/pages/About/About.html">
+          <img alt="icon item" src="./images/icon-fun.png" />
+        </a>
+        <a class="active" href="/pages/Shop/Shop.html">
+          <img alt="icon item" src="./images/icon-shop.png" />
+        </a>
+        <a class="active" href="/pages/Cart/ShoppingCart.html">
+          <img alt="icon item" src="./images/icon/ic-cart-white.svg" />
+        </a>
+        <a class="active" href="/pages/SignIn/SignIn.html">
+          <img alt="icon item" src="./images/icon/ic-user-white.svg" />
+        </a>
+        <img alt="icon item" id="menuNavbar" src="./images/icon-menu.png" />
+        <div class="line-footer"></div>
+      </div>
+    </div>
+    <!-- Show menu Bottom -->
+    <div class="wrapper-offcanvas-bottom" id="wrapper-offcanvas-bottom">
+      <div class="group-footer-items active" id="hideMenuNavbar">
+        <div class="line-footer"></div>
+        <img alt="icon item" class="img-logo-branch" class="ic-logo-footer" src="./images/logo-footer-main.png" />
+        <p>RoytheArt</p>
+      </div>
+      <div class="group-footer-items">
+        <div class="line-footer active"></div>
+        <div class="parent-items-menu-collection">
+          <a class="active" href="/">
+            <img alt="icon item" src="./images/icon-menu.png" />
+            <p>Menu</p>
+          </a>
+          <a href="/pages/homepage/index.html">
+            <img alt="icon item" src="./images/icon/ic-home-white.svg" />
+            <p>Home</p>
+          </a>
+          <a href="/pages/About/About.html">
+            <img alt="icon item" src="./images/icon-fun.png" />
+            <p>About Roy The Art</p>
+          </a>
+          <a href="/pages/Shop/Shop.html">
+            <img alt="icon item" src="./images/icon-shop.png" />
+            <p>Store</p>
+          </a>
+          <a href="/pages/Cart/ShoppingCart.html">
+            <img alt="icon item" src="./images/icon/ic-cart-white.svg" />
+            <p>Shopping cart</p>
+          </a>
+          <a href="/pages/SignIn/SignIn.html">
+            <img alt="icon item" src="./images/icon/ic-user-white.svg" />
+            <p>Account</p>
+          </a>
+        </div>
+        <div class="line-footer"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/LoadingPage/loadingPage.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    let w = window.innerWidth;
+    if (w > 1024) {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 12,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    } else if (w < 1024 && w > 720) {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    } else {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    }
+  </script>
+</body>
+
 </html>

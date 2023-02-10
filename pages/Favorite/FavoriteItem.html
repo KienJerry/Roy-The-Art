@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Favorite Item</title>
+    <link rel="stylesheet" href="../../styles/Pages/_p-favoriteItem.style.css" />
+    <link rel="stylesheet" href="../../styles/components/_c-favoriteItem.style.css" />
+</head>
+
+<body onload="myFunction()">
+    <div class="wrapper-body">
+        <div id="header"></div>
+        <div class="container-main-favorite">
+            <!-- Menu Drawer -->
+            <div class="item-menu-drawer">
+                <a href="/pages/Profile/Profile.html">
+                    <div class="btn-menu">Profile</div>
+                </a>
+                <a href="/pages/Other/Other.html" style="color: #6B8089;">
+                    <div class="btn-menu">Orders</div>
+                </a>
+                <a href="/pages/Favorite/FavoriteItem.html" class="btn-menu active">Favorite Item</a>
+                <a href="/pages/Event/Event.html" class="btn-menu">Events</a>
+            </div>
+            <!-- Layout Favorite Item -->
+            <div class="wapper-layout-favorite">
+                <h1>favorite item ( <span>3</span> )</h1>   
+                <div class="line-favorite"></div>
+                <div id="favorite"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function myFunction() {
+        loadScript("../../components/header.html", "header");
+        loadScript("../../components/footer.html", "footer");
+        loadScript("../../components/Favorite/favoriteItem.html", "favorite");
+    }
+</script>
+
+</html>

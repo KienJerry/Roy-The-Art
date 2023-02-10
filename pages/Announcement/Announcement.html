@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Announcement</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Pages/_p-announcement.style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/-c_announcement.style.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-announcement">
+        <div class="bg-header-txt-announcement">
+          <div class="bg-title">
+            <img
+              src="../../images/icon/ic-start-seller.svg"
+              alt="rate orange"
+            />
+            <h1>Announcements</h1>
+          </div>
+          <div class="line-header-annnouncement"></div>
+        </div>
+        <!-- June 2022 hot -->
+        <div class="container-hot-announcements">
+          <div class="top-title-dateTime">
+            <div class="line-top"></div>
+            <p>June 2022</p>
+            <div class="line-top"></div>
+          </div>
+          <div class="list-announcements-hot">
+            <div class="bg-item-announcements">
+              <img
+                src="../../images/img/Announcements-hot.png"
+                alt="Announcements"
+              />
+              <div class="discriptions-announcements-hot">
+                <p>🎉 NEW AVAILABLE 12/07/2022</p>
+                <h1>ENCANTO COLLECTIONS</h1>
+                <div class="line-discriptions-announcements"></div>
+                <h2>
+                  A full-set Encanto includes 15 photo prints of beautiful and
+                  amazing characters in the show are now available!
+                </h2>
+              </div>
+              <a href="/pages/Announcement/AnnouncementDetail.html" class="btn-view-now">VIEW NOW</a>
+            </div>
+            <div class="bg-item-announcements">
+              <img
+                src="../../images/img/Announcements-discount.png"
+                alt="Announcements"
+              />
+              <div class="discriptions-announcements-hot">
+                <p>🎉 NEW AVAILABLE 12/07/2022</p>
+                <h1>ENCANTO COLLECTIONS</h1>
+                <div class="line-discriptions-announcements"></div>
+                <h2>
+                  A full-set Encanto includes 15 photo prints of beautiful and
+                  amazing characters in the show are now available!
+                </h2>
+              </div>
+              <a href="/pages/Announcement/AnnouncementDetail.html" class="btn-view-now">VIEW NOW</a>
+            </div>
+          </div>
+        </div>
+        <!-- June 2022 -->
+        <div class="container-announcements">
+          <div class="top-title-dateTime">
+            <div class="line-top"></div>
+            <p>June 2022</p>
+            <div class="line-top"></div>
+          </div>
+          <div id="listAnnouncement"></div>
+        </div>
+        <!-- many platform  -->
+        <div class="container-many-platform-announcement">
+          <div class="top-title-dateTime">
+            <div class="line-top"></div>
+            <p>June 2022</p>
+            <div class="line-top"></div>
+          </div>
+          <div class="wrapper-box-many-platform">
+            <div class="descriptions-many-platfrom">
+              <h1>
+                🎉 Our merch is available on many platform you can check out
+                here:
+              </h1>
+              <div class="btn-link-platform">
+                <div class="btn-item instagram">
+                  <img
+                    src="../../images/icon/ic-instagram-orange.svg"
+                    alt="instagram"
+                  />
+                  <p class="text-platfrom instagram">Instagram: @RoytheArt</p>
+                </div>
+                <div class="btn-item Etsy">
+                  <img src="../../images/icon/ic-Etsy.svg" alt="Etsy" />
+                  <p class="text-platfrom Etsy">Etsy Store</p>
+                </div>
+                <div class="btn-item displate">
+                  <img
+                    src="../../images/icon/ic-Displate-circel.svg"
+                    alt="Displate"
+                  />
+                  <p class="text-platfrom Etsy">Displate</p>
+                </div>
+              </div>
+              <div class="line-descriptions-many-platform"></div>
+              <p>PLEASE CAREFULLY READ THIS BEFORE YOUR PURCHASE:</p>
+              <span>
+                International deliveries may be affected by factors beyond our
+                control, like customs delays, overseas postal disruptions, and
+                COVID-19 restrictions in other countries.</span
+              >
+              <div class="btn-read-more">
+                <img src="../../images/icon/ic-tick-orange.svg" alt="ticker" />
+                <span>Read more</span>
+              </div>
+            </div>
+            <div class="bg-img-discount">
+              <img
+                src="../../images/img/Announcements-discount.png"
+                alt="Announcements discount"
+              />
+              <div class="bg-transfornm"></div>
+              <div class="tlt-getdiscount">
+                <h1>20% OFF</h1>
+                <p>Get discount code in our website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript(
+        "../../components/Announcement/LisstAnnouncement.html",
+        "listAnnouncement"
+      );
+    }
+  </script>
+</html>

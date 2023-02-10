@@ -1,0 +1,288 @@
+@import url(../html.custom.style.css);
+
+.wrapper-collections {
+  padding: 120rem 80rem 40rem 80rem;
+}
+
+/* Options */
+.wrapper-collections .header-options-collection {
+  display: flex;
+  justify-content: center;
+}
+.header-options-collection .child-items-options {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #242b2e;
+  background: #f3f2f2;
+  border-radius: 7rem;
+  padding: 4rem 16rem;
+  margin: 0 4rem;
+}
+.header-options-collection .child-items-options.active {
+  background: #be8637;
+  color: #ffffff;
+}
+
+/* Header Title */
+.wrapper-collections .header-title-collections {
+  margin: 24rem 0;
+  display: flex;
+  align-items: center;
+}
+.header-title-collections h1 {
+  font-weight: 600;
+  font-size: 24rem;
+  color: #242b2e;
+  padding-right: 20rem;
+  width: auto;
+}
+.header-title-collections .line-header-collections {
+  border: 1rem solid #be8637;
+  background: #be8637;
+  width: 100%;
+  flex: 1;
+}
+
+/* List Collections */
+.wrapper-collections .line-bottom-list-collections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 48rem 0 32rem 0;
+}
+
+.line-bottom-list-collections p {
+  background: #be8637;
+  width: 50%;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* Announcements */
+.wrapper-collections .layout-announcements {
+  display: flex;
+}
+.layout-announcements .group-announcements {
+  flex: 1;
+}
+/* Announcements Left */
+.bg-announcements h1 {
+  font-weight: 600;
+  font-size: 24rem;
+  color: #242b2e;
+}
+.bg-announcements .form-item-announcements {
+  margin-top: 16rem;
+  display: flex;
+}
+.form-item-announcements .bg-child-item {
+  background: #ffffff;
+  border: 1rem solid rgba(38, 37, 30, 0.12);
+  box-shadow: 0rem 8rem 16rem rgba(0, 0, 0, 0.04);
+  border-radius: 7rem;
+  padding: 24rem;
+  flex: 1;
+  margin-right: 32rem;
+  position: relative;
+}
+.bg-child-item .c_descriptions {
+  display: flex;
+  align-items: center;
+}
+.c_descriptions img {
+  width: 160rem;
+  height: 160rem;
+  object-fit: cover;
+  border-radius: 7rem;
+}
+.c_descriptions .wrapper-title-descriptions {
+  margin-left: 13rem;
+}
+.wrapper-title-descriptions .bg-text-announcements-collections {
+  border-bottom: 2rem solid #be8637;
+}
+.wrapper-title-descriptions p {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #242b2e;
+}
+.wrapper-title-descriptions h1 {
+  font-weight: 700;
+  font-size: 16rem;
+  color: #242b2e;
+}
+.bg-child-item .btn-shop-now {
+  width: 100%;
+  padding: 12rem 0;
+  background: #be8637;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16rem;
+  color: #ffffff;
+  margin-top: 24rem;
+  /* position: absolute;
+  bottom: 24rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.group-announcements .bg-ourLinks {
+  margin-top: 28rem;
+}
+.bg-ourLinks h1 {
+  font-weight: 600;
+  font-size: 24rem;
+  color: #242b2e;
+}
+.bg-ourLinks .form-item-ourLinks {
+  margin-top: 16rem;
+  display: flex;
+}
+.bg-ourLinks .form-item-ourLinks .bg-child-item {
+  background: #ffffff;
+  border: 1px solid rgba(38, 37, 30, 0.12);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  margin-right: 32rem;
+  flex: 1;
+  padding: 24rem;
+  display: flex;
+  justify-content: space-between;
+}
+.bg-ourLinks .bg-child-item .c_descriptions {
+  display: flex;
+  align-items: center;
+}
+.bg-ourLinks .c_descriptions img {
+  width: 36rem;
+  height: 36rem;
+  object-fit: cover;
+}
+.bg-ourLinks .c_descriptions .wrapper-title-descriptions {
+  margin-left: 16rem;
+}
+.bg-ourLinks .wrapper-title-descriptions p {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #242b2e;
+}
+.bg-ourLinks .wrapper-title-descriptions b {
+  font-weight: 700;
+  font-size: 16rem;
+  color: #242b2e;
+  padding-bottom: 2rem;
+  border-bottom: 4rem solid #be8637;
+}
+.bg-ourLinks .bg-child-item .btn-view {
+  padding: 6rem 24rem;
+  background: #be8637;
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 16rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+/* Announcements Right */
+.layout-announcements .group-discount {
+  width: auto;
+  position: relative;
+}
+.group-discount img {
+  width: 322rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7rem;
+  overflow: hidden;
+}
+.group-discount .bg-descriptions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 0 10rem;
+  border-radius: 7rem;
+}
+.bg-descriptions h1 {
+  font-weight: 600;
+  font-size: 45rem;
+  color: #ffffff;
+}
+.bg-descriptions p {
+  font-weight: 600;
+  font-size: 24rem;
+  color: #ffffff;
+  padding: 10rem 0 20rem 0;
+}
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  /* Options */
+  .wrapper-collections {
+    padding: 90rem 32rem 0rem 32rem;
+  }
+  .header-options-collection .child-items-options {
+    font-size: 12rem;
+  }
+
+  /* Line List Collections */
+  .line-bottom-list-collections p {
+    width: 80%;
+  }
+
+  /* announcements */
+  .form-item-announcements .bg-child-item.active {
+    display: none;
+  }
+  .bg-ourLinks .form-item-ourLinks {
+    flex-direction: column;
+  }
+  .bg-ourLinks .form-item-ourLinks .bg-child-item {
+    margin-top: 12rem;
+  }
+
+  .layout-announcements .group-discount {
+    height: none;
+    flex: 1;
+  }
+  .group-discount img {
+    width: 280rem;
+    height: 100%;
+  }
+  .wrapper-title-descriptions p.active {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px) {
+  /* Options */
+  .wrapper-collections {
+    padding: 70rem 16rem 0rem 16rem;
+  }
+  .wrapper-collections .header-options-collection {
+    justify-content: unset;
+    flex-wrap: wrap;
+  }
+  .header-options-collection .child-items-options {
+    margin: 4rem;
+  }
+  /* announcements */
+  .wrapper-collections .layout-announcements {
+    flex-direction: column;
+  }
+  .bg-ourLinks .form-item-ourLinks .bg-child-item {
+    margin-right: 0;
+  }
+
+  .layout-announcements .group-discount {
+    margin-top: 24rem;
+    height: 100%;
+  }
+  .layout-announcements .group-discount img {
+    width: 100%;
+  }
+}

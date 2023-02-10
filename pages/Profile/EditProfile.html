@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../../styles/Pages/_p-editProfile.style.css" />
+</head>
+
+<body onload="myFunction()">
+    <div id="header"></div>
+    <div class="wapper-main-edit-profile">
+        <div class="container-edit-profile">
+            <p>Edit profile</p>
+            <div class="box-item-profile">
+                <p>Profile picture</p>
+                <div class="Profile-picture">
+                    <div class="btn-Profile-picture">
+                        <label for="files" class="btn">Choose file</label>
+                        <input id="files" style="display: none;" type="file">
+                        <label id="fileLabel">No file choosing</label>
+                    </div>
+                    <img src="../../images/img/img-profile-edit.png" alt="profile">
+                    <span class="text-blurred">Must be a .jpg, .gif or .png file smaller than 10MB and at least 400px by
+                        400px.</span>
+                </div>
+            </div>
+            <div class="line-edit-profile"></div>
+            <div class="box-item-profile">
+                <p>Your name</p>
+                <span>James</span>
+                <span class="change-text">Change</span>
+            </div>
+            <div class="box-item-profile active">
+                <p>Gender</p>
+                <div class="group-checkbox">
+                    <input type="radio" id="Male" name="Gender" value="Male">
+                    <label for="Male">Male</label>
+                </div>
+                <div class="group-checkbox">
+                    <input type="radio" id="Female" name="Gender" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+                <div class="group-checkbox">
+                    <input type="radio" id="Rather_not_say" name="Gender" value="Rather_not_say">
+                    <label for="Rather_not_say">Rather not say</label>
+                </div>
+            </div>
+            <div class="box-item-profile active">
+                <p>City</p>
+                <div class="group-input">
+                    <input type="text">
+                    <span>Start typing and choose from a suggested city to help others find you.</span>
+                </div>
+            </div>
+            <div class="box-item-profile active">
+                <p>Birthday</p>
+                <div class="group-input-Birthday">
+                    <div id="select-option-size"></div>
+                    <div id="select-option-size-date"></div>
+                </div>
+            </div>
+            <div class="box-item-profile active">
+                <p>About</p>
+                <div class="group-input">
+                    <input type="text">
+                    <span>Tell people a little about yourself.</span>
+                </div>
+            </div>
+            <div class="box-item-profile active">
+                <p>Favorite Materials</p>
+                <div class="group-input">
+                    <input type="text">
+                    <span>Share up to 13 materials that you like. Separate each material with a comma.</span>
+                </div>
+            </div>
+            <div class="box-item-profile active">
+                <p>Include on Your Profile</p>
+                <div class="checkbox-include">
+                    <div class="btn-check-box">
+                        <input type="checkbox" id="Shop">
+                        <label for="Shop">Shop</label>
+                    </div>
+                    <div class="btn-check-box">
+                        <input type="checkbox" id="FavoriteItems">
+                        <label for="FavoriteItems">Favorite items</label>
+                    </div>
+                    <div class="btn-check-box">
+                        <input type="checkbox" id="FavoriteShops">
+                        <label for="FavoriteShops">Favorite shops</label>
+                    </div>
+                </div>
+            </div>
+            <div class="box-item-profile">
+                <p></p>
+                <div class="btn-save">Save Changes</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../assets/SelectOption/month.js"></script>
+<script src="../../assets/Profile/EditProfile.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function myFunction() {
+        loadScript("../../components/header.html", "header");
+        loadScript("../../components/footer.html", "footer");
+
+        const Arr1 = new Array();
+        for (let i = 1; i < 13; i++) {
+            Arr1.push(i);
+        }
+        const Arr2 = new Array();
+        for (let i = 1; i < 31; i++) {
+            Arr2.push(i);
+        }
+        loadSelectOption('select-option-size', 'input-option-size', 'items-option-size', 'select-size', Arr1);
+        loadSelectOptions('select-option-size-date', 'input-option-size-date', 'items-option-size-date', 'select-size-date', Arr2);
+    }
+
+</script>
+
+</html>

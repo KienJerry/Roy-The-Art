@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy The Art | Other Detail</title>
+  <link rel="stylesheet" href="../../styles/Pages/_p-otherDatail.style.css" />
+</head>
+
+<body onload="myFunction()">
+  <div class="wrapper-body">
+    <div id="header"></div>
+    <div class="wrapper-main-OrtherMain">
+      <!-- timeLine -->
+      <div class="container-timeline-orther">
+        <div class="box-item-timeline">
+          <div class="circel-icon-timeline active">
+            <img src="../../images/icon/ic-cart-orther-green.svg" alt="icon orther">
+          </div>
+          <p class="active">Order</p>
+          <span>Dec 12, 2022</span>
+        </div>
+        <div class="line-item active"></div>
+        <div class="box-item-timeline">
+          <div class="circel-icon-timeline active">
+            <img src="../../images/icon/ic-car-orther-green.svg" alt="icon orther">
+          </div>
+          <p class="active">Shipping</p>
+          <span>Dec 24, 2022</span>
+        </div>
+        <div class="line-item"></div>
+        <div class="box-item-timeline">
+          <div class="circel-icon-timeline">
+            <img src="../../images/icon/ic-tick-orther-grey.svg" alt="icon orther">
+          </div>
+          <p>Received</p>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Order infomation -->
+      <div class="wapper-infomation">
+        <h1>Order infomation</h1>
+        <div class="descriptions-info-orther">
+          <span>Order code:</span>
+          <p>OD001</p>
+        </div>
+        <div class="descriptions-info-orther">
+          <span>Order date:</span>
+          <p>December 12, 2022 15:30</p>
+        </div>
+        <div class="descriptions-info-orther">
+          <span>Shipping address:</span>
+          <p>23/224 Phan Văn Trị, Gò Vấp, Hồ Chí Minh, Vietnam</p>
+        </div>
+      </div>
+
+      <!-- Order item -->
+      <div class="wapper-orther-items">
+        <h1>Order item(s)</h1>
+        <div class="item-orther">
+          <img src="../../images/img/CategoryCollection.png" alt="CategoryCollection">
+          <div class="descriptions-orther-item">
+            <div class="container-item-descriptions">
+              <div class="name-prodiuctions">GENSHIN IMPACT - Kokomi 2022 | Photo Prints | Roy The Art | Fan Art</div>
+              <div class="name-total">1</div>
+              <div class="name-price">86,207₫</div>
+            </div>
+            <span>Size: 4 x 6 inches</span>
+          </div>
+        </div>
+        <div class="item-orther">
+          <img src="../../images/img/CategoryCollection.png" alt="CategoryCollection">
+          <div class="descriptions-orther-item">
+            <div class="container-item-descriptions">
+              <div class="name-prodiuctions">GENSHIN IMPACT - Kokomi 2022 | Photo Prints | Roy The Art | Fan Art</div>
+              <div class="name-total">1</div>
+              <div class="name-price">86,207₫</div>
+            </div>
+            <span>Size: 4 x 6 inches</span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="wapper-total-pay">
+          <div class="descriptions-total-pay hide"></div>
+          <div class="descriptions-total-pay">
+            <div class="descriptions-total-pay-top">
+              <div class="item-total">
+                <p>Item(s) total:</p>
+                <span>12,000,000đ</span>
+              </div>
+              <div class="item-total">
+                <p class="active">Shipping <span>( to Viet nam)</span></p>
+                <span>100,000đ</span>
+              </div>
+              <div class="item-total">
+                <p>Tax:</p>
+                <span>0đ</span>
+              </div>
+            </div>
+            <div class="descriptions-total-pay-bot">
+              <div class="item-total">
+                <p class="bold">Total pay (1 item):</p>
+                <span class="bold">100,000đ</span>
+              </div>
+              <span>Local taxes included (where applicable)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+    loadScript("../../components/header.html", "header");
+    loadScript("../../components/footer.html", "footer");
+  }
+</script>
+
+</html>

@@ -1,0 +1,247 @@
+@import url(../html.custom.style.css);
+@import url(../components/_c-OptionValue.style.css);
+.wapper-main-edit-profile {
+  padding: 80rem 270rem 0 270rem;
+}
+.wapper-main-edit-profile > .container-edit-profile {
+  width: 100%;
+  padding: 24rem;
+  background: #ffffff;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.16),
+    0rem 1rem 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  row-gap: 24rem;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #2d3234;
+}
+.container-edit-profile > p {
+  font-size: 24rem;
+}
+.container-edit-profile .box-item-profile {
+  display: flex;
+  gap: 44rem;
+  width: 100%;
+}
+.container-edit-profile .box-item-profile.active {
+  margin-top: 12rem;
+}
+.box-item-profile > p {
+  width: 180rem;
+  text-align: right;
+}
+.box-item-profile > .Profile-picture {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12rem;
+}
+.Profile-picture > .btn-Profile-picture {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+.btn-Profile-picture > .btn {
+  padding: 8rem 16rem;
+  background: #be8637;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border: 1rem solid #be8637;
+  cursor: pointer;
+}
+.btn-Profile-picture > .choose-file {
+  height: 33rem;
+  width: 80rem;
+}
+.btn-Profile-picture > label {
+  font-weight: 300;
+  font-size: 14rem;
+  color: #7a8c96;
+}
+.Profile-picture > img {
+  width: 96rem;
+  height: 96rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.Profile-picture .text-blurred {
+  font-size: 12rem;
+  color: #7a8c96;
+}
+.line-edit-profile {
+  background-color: #bbbbbb;
+  height: 1rem;
+  width: 100%;
+}
+.box-item-profile > span {
+  font-weight: 300;
+  color: #242b2e;
+}
+.box-item-profile > span.change-text {
+  font-size: 14rem;
+  text-decoration-line: underline;
+  color: #be8637;
+  cursor: pointer;
+}
+.box-item-profile > .group-checkbox {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  font-weight: 300;
+  color: #242b2e;
+}
+.group-checkbox > input[type="radio"] {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #be8637;
+  background-color: #be8637;
+  border: 1rem solid #be8637 !important;
+}
+.group-checkbox > input[type="radio"]:checked:after {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2rem solid #bbbbbb;
+}
+.box-item-profile > .group-checkbox > label {
+  cursor: pointer;
+}
+.box-item-profile > .group-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+  flex: 1;
+}
+.box-item-profile > .group-input > span {
+  font-weight: 300;
+  color: #242b2e;
+}
+.box-item-profile > .group-input > input {
+  border: 1px solid #f0f0f0;
+  max-width: 70%;
+  font-weight: 300;
+  font-size: 16rem;
+  color: #242b2e;
+  padding: 0 5rem;
+}
+.box-item-profile > .group-input > input[type="text"]:focus {
+  border: 1px solid #c7c7c7 !important;
+  outline: none !important;
+}
+.box-item-profile > .group-input-Birthday {
+  width: 51.5%;
+  max-width: 51.5%;
+  display: flex;
+  gap: 20rem;
+}
+.group-input-Birthday > input {
+  flex: 1;
+}
+.box-item-profile .checkbox-include {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18rem;
+  justify-content: center;
+}
+.checkbox-include > .btn-check-box {
+  display: flex;
+  gap: 11rem;
+  align-items: center;
+}
+.checkbox-include > .btn-check-box > label {
+  font-weight: 300;
+  color: #242b2e;
+  cursor: pointer;
+}
+.checkbox-include > .btn-check-box > input[type="checkbox"] {
+  width: 18rem;
+  height: 18rem;
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  border: 0.15em solid #bbbbbb;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 18rem;
+  height: 18rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #be8637;
+  border-radius: 0.15em;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]::before {
+  transform-origin: bottom left;
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 100%,
+    100% 0,
+    89% 0,
+    89% 91%,
+    11% 90%,
+    11% 0,
+    89% 0,
+    89% 9%,
+    11% 9%,
+    11% 0,
+    41% 0,
+    77% 0,
+    0 0,
+    4% 81%,
+    18% 45%,
+    35% 64%,
+    84% 13%,
+    81% 45%,
+    33% 82%,
+    9% 60%
+  );
+}
+.box-item-profile > .btn-save {
+  background: #be8637;
+  border-radius: 3rem;
+  padding: 6rem 24rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .wapper-main-edit-profile {
+    padding: 80rem 16rem 0 16rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container-edit-profile .box-item-profile {
+    flex-direction: column;
+    gap: 20rem;
+  }
+}

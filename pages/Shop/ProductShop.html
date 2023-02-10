@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Shop</title>
+    <link rel="stylesheet" href="../../styles/Pages/_p-shop.style.css" />
+    <link rel="stylesheet" href="../../styles/Pages/_p_ProductShop.style.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c-countCategoryShop.style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c-listProdShop.style.css"
+    />
+  </head>
+
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-shop">
+        <!-- Options left -->
+        <div class="container-options-shop">
+          <form class="wrapper-search">
+            <input
+              class="type-input-search"
+              type="text"
+              placeholder="Search Item"
+            />
+            <input
+              class="type-icon-search"
+              type="image"
+              src="../../images/icon/ic-search-shop.svg"
+            />
+          </form>
+          <div id="CountCategoryShop"></div>
+          <div class="container-encanto-collections">
+            <div class="chil-item-discriptions">
+              <img
+                src="../../images/icon/ic-congratulation-shop.svg"
+                alt="icon congratulation"
+              />
+              <div class="discriptions-shop-now">
+                <p>NEW AVAILABLE</p>
+                <b>ENCANTO COLLECTIONS</b>
+              </div>
+            </div>
+            <div class="btn-shopNow">SHOP NOW</div>
+          </div>
+          <div class="bg-discount-code-shop">
+            <img
+              src="../../images/img/Announcements-discount.png"
+              alt="Announcements-discount"
+            />
+            <div class="bg-txt-discount-shop"></div>
+            <div class="container-title-descriptions">
+              <h1>20% OFF 🎉</h1>
+              <p>Get discount code in our website</p>
+            </div>
+          </div>
+        </div>
+        <!-- List Prod right -->
+        <div class="container-prod-shop">
+          <div class="wrapper-all-items-shop">
+            <div class="container-txt-header">
+              <h1>All Items</h1>
+              <div class="line-header-all-items-shop"></div>
+            </div>
+            <div id="ListProd"></div>
+          </div>
+          <div class="paginate-reviews">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../assets/Shop/Shop.js"></script>
+  <script src="../../assets/PaginateReviews/index.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript(
+        "../../components/Shop/CountCategoryShop.html",
+        "CountCategoryShop"
+      );
+      loadScript("../../components/Shop/CountCategoryShop.html", "myModal");
+      loadScript("../../components/Shop/AllListShop.html", "ListProd");
+    }
+  </script>
+</html>

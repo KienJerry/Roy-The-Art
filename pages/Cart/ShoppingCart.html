@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | ShoppingCart</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Pages/_p-shoppingCart.style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c-OptionValue.style.css"
+    />
+  </head>
+
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-main-shoppingcart">
+        <div class="header-shoppingcart">
+          <!-- Header -->
+          <div class="btn-shopping-cart">
+            <img
+              src="../../images/icon/ic-cart-shopping.svg"
+              alt="ic shopping"
+            />
+            <span>Shopping cart</span>
+          </div>
+          <div class="line-header-shopping"></div>
+          <div class="btn-keepShopping">Keep shopping</div>
+        </div>
+        <div class="container-form-shopping-cart">
+          <!-- Item Cart -->
+          <div class="group-list-cart">
+            <p>2 item in your cart</p>
+            <!-- Item 1 -->
+            <div class="bg-list-item-cart">
+              <img
+                class="image"
+                src="../../images/img/Announcements-discount.png"
+                alt="Announcements"
+              />
+              <div class="wrapper-item-shopping">
+                <p>
+                  GENSHIN IMPACT - DILUC 2022 | Photo Prints | Roy The Art | Fan
+                  Art
+                </p>
+                <span>Size: A5 size</span>
+                <div class="wapper-choose-item-prod">
+                  <div class="box-item-choose">
+                    <img
+                      class="ic-remove"
+                      src="../../images/icon/ic-save.svg"
+                      alt="icon save"
+                    />
+                    <p>Save for late</p>
+                  </div>
+                  <div class="box-item-choose">
+                    <img
+                      class="ic-remove"
+                      src="../../images/icon/ic-delete-shopping.svg"
+                      alt="icon remove"
+                    />
+                    <p>Remove</p>
+                  </div>
+                </div>
+              </div>
+              <div class="select-option">
+                <select id="mySelect">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="payment-shopping">
+                <p>344,828₫</p>
+                <span>(172,414đ each)</span>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="bg-list-item-cart">
+              <img
+                class="image"
+                src="../../images/img/Announcements-discount.png"
+                alt="Announcements"
+              />
+              <div class="wrapper-item-shopping">
+                <p>
+                  GENSHIN IMPACT - DILUC 2022 | Photo Prints | Roy The Art | Fan
+                  Art
+                </p>
+                <span>Size: 4 x 6 inches</span>
+                <div class="wapper-choose-item-prod">
+                  <div class="box-item-choose">
+                    <img
+                      class="ic-remove"
+                      src="../../images/icon/ic-save.svg"
+                      alt="icon save"
+                    />
+                    <p>Save for late</p>
+                  </div>
+                  <div class="box-item-choose">
+                    <img
+                      class="ic-remove"
+                      src="../../images/icon/ic-delete-shopping.svg"
+                      alt="icon remove"
+                    />
+                    <p>Remove</p>
+                  </div>
+                </div>
+              </div>
+              <div class="select-option">
+                <select id="mySelect">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="payment-shopping">
+                <p>86,207₫</p>
+              </div>
+            </div>
+            <div class="wraper-apply">
+              <div class="bg-apply-voucher">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox"></label>
+                  <div class="checkbox-txt">This order is a gift</div>
+                </div>
+                <i class="active">Prices will not be shown on backing slip</i>
+              </div>
+              <div class="bg-apply-voucher">
+                <div class="box-txt-apply-code">
+                  <img
+                    src="../../images/icon/ic-apply-voucher.svg"
+                    alt="icon voucher"
+                  />Apply shop coupon voucher
+                </div>
+                <div class="form-voucher">
+                  <p>ROYTHEART2022: 10% off</p>
+                  <p style="font-weight: 300">-43,103đ</p>
+                  <img
+                    src="../../images/icon/x.svg"
+                    alt="icon"
+                    onclick="removeVoucher()"
+                  />
+                </div>
+                <form
+                  action=""
+                  method="get"
+                  class="type-input-code"
+                  id="handle-voucher"
+                >
+                  <input
+                    name="voucher"
+                    type="text"
+                    placeholder="Enter coupon code"
+                  />
+                  <button>Apply</button>
+                </form>
+              </div>
+            </div>
+            <div class="wraper-apply">
+              <div class="bg-apply-voucher">
+                <textarea placeholder="Add a note to RoytheArt"></textarea>
+              </div>
+              <div class="bg-apply-voucher">
+                <div id="select-option-size"></div>
+                <i>Estimated delivery: Feb 22 to Mar 7, 2023</i>
+                <i>From Australia</i>
+              </div>
+            </div>
+          </div>
+          <!-- Checkout -->
+          <div class="group-check-out">
+            <h1>How you’ll pay</h1>
+            <div class="checkbox-containers">
+              <input type="checkbox" id="checkboxs" />
+              <label for="checkboxs"></label>
+              <div class="checkbox-txt">This order is a gift</div>
+            </div>
+            <div class="bg-item-check-out-cart active">
+              <div class="wapper-child-item">
+                <p>Item(s) total:</p>
+                <b>431,035đ</b>
+              </div>
+              <div class="wapper-child-item" style="position: relative">
+                <p>
+                  Shipping <br /><span
+                    >( to
+                    <span class="popup-country" onclick="handleShowPopups()"
+                      >Viet nam</span
+                    >
+                    )</span
+                  >
+                </p>
+                <b>310,000đ</b>
+              </div>
+            </div>
+            <div class="bg-item-check-out-cart">
+              <div class="wapper-child-item" style="align-items: center">
+                <p style="font-weight: 400">Total pay (2 items):</p>
+                <b class="active">741,380đ</b>
+              </div>
+            </div>
+            <a href="/pages/Checkout/index.html" class="btn-check-out-payment"
+              >CHECKOUT</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+      <div class="wapper-popup-country" id="wapper-popup-country">
+        <div class="bg-box-popup-country">
+          <h2>Get shipping cost</h2>
+          <div class="choose-region">
+            <p>Choose region <span style="color: red">*</span></p>
+            <div id="select-option-sizes"></div>
+          </div>
+          <div class="form-btn">
+            <div class="bg-btn cancel">Cancel</div>
+            <div class="bg-btn save">Save</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../assets/ShoppingCart/ApplyVoucher.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../assets/SelectOption/month.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+
+      const sizeItems = [
+        "Standard shipping ( Feb 22 - Mar 7 ) 310,000",
+        "Standard shipping ( Feb 22 - Mar 7 ) 320,000",
+        "Standard shipping ( Feb 22 - Mar 7 ) 330,000",
+      ];
+      loadSelectOptionss(
+        "select-option-size",
+        "input-option-size",
+        "items-option-size",
+        "select-size",
+        sizeItems
+      );
+      const sizeItem = ["Viet Nam", "Canada", "Singapore", "Australia"];
+      loadSelectOptionss(
+        "select-option-sizes",
+        "input-option-sizes",
+        "items-option-sizes",
+        "select-sizes",
+        sizeItem
+      );
+    }
+  </script>
+</html>

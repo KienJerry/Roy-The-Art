@@ -1,0 +1,132 @@
+@import url(../html.custom.style.css);
+.wrapper-container-Detail {
+  padding: 100rem 142rem 0 142rem;
+  position: relative;
+  display: flex;
+  gap: 68rem;
+}
+
+/* Post */
+.wrapper-container-Detail > .bg-posts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30rem;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #696969;
+  flex: 2;
+  width: 100%;
+}
+.bg-posts .layout-post {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12rem;
+}
+.bg-posts p {
+  color: #242b2e;
+}
+.bg-posts span.active {
+  font-weight: 300;
+  font-size: 14rem;
+  color: #242b2e;
+}
+h1 {
+  font-weight: 700;
+  font-size: 20rem;
+  color: #242b2e;
+}
+h2 {
+  font-weight: 600;
+  font-size: 20rem;
+  color: #242b2e;
+}
+h3 {
+  font-weight: 600;
+  font-size: 16rem;
+  color: #242b2e;
+}
+.bg-posts .layout-post > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bg-posts small {
+  font-weight: 400;
+  font-size: 12rem;
+  letter-spacing: 0.02em;
+  color: #9c9c9c;
+}
+.bg-posts small.active {
+  color: #ecb424;
+}
+.bg-posts .bg-location {
+  display: flex;
+  gap: 6.62rem;
+  align-items: flex-start;
+}
+.bg-location > img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+}
+.bg-posts iframe {
+  width: 100%;
+  height: 316rem;
+  border: 0;
+}
+.bg-posts .btn-join-event, .header-comming-events .btn-join-event {
+  padding: 8rem 24rem;
+  background: #be8637;
+  border-radius: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Up Commit Event */
+.wrapper-container-Detail > .upcomming-events {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20rem;
+  width: 100%;
+  flex: 1;
+  color: #242b2e;
+  font-size: 16rem;
+  font-weight: 400;
+}
+.upcomming-events .header-comming-events{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16rem;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper-container-Detail {
+    padding: 100rem 32rem 0 32rem;
+    gap: 24rem;
+  }
+  .wrapper-container-Detail > .bg-posts {
+    font-size: 14rem;
+    row-gap: 24rem;
+  }
+  .bg-posts h1,
+  h2 {
+    font-size: 16rem;
+  }
+  .bg-posts iframe {
+    height: 234rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .bg-posts iframe {
+    height: 176rem;
+  }
+  .wrapper-container-Detail {
+    padding: 100rem 16rem 0 16rem;
+    flex-direction: column;
+  }
+}

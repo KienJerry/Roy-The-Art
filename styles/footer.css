@@ -1,0 +1,128 @@
+.section-footer-page {
+    padding: 3rem 0;
+    background: #F3F2F2;
+}
+
+.wrapper-footer-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-footer-page .group-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.group-footer .txt-subscribe-main {
+    font-weight: 600;
+    font-size: 20px;
+    color: #242B2E;
+}
+
+.group-footer .txt-subscribe-sub {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6B8089;
+}
+
+.group-footer .form-footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.form-footer .input-footer {
+    padding: .5rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(86, 79, 43, 0.25);
+    border-radius: 7px;
+    outline: none;
+    width: 100%;
+}
+
+.form-footer .btn-footer {
+    background: #BE8637;
+    border-radius: 7px;
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+.group-footer .box-footer-social {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+
+.group-footer .txt-copyright {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6B8089;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper-footer-page {
+        max-width: 862px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-footer-page {
+        max-width: 662px;
+        column-gap: 2rem;
+    }
+
+    .group-footer .txt-subscribe-main {
+        font-size: 16px;
+    }
+
+    .group-footer .txt-subscribe-sub {
+        font-size: 12px;
+    }
+
+    .group-footer .txt-copyright {
+        font-size: 12px;
+    }
+
+    .group-footer .txt-bottom {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper-footer-page {
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 100%;
+    }
+
+    .wrapper-footer-page .group-footer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .group-footer .box-footer-social {
+        justify-content: center;
+    }
+
+    .section-footer-page {
+        padding: 3rem 1rem;
+    }
+
+    .group-footer .txt-subscribe-main {
+        font-size: 14px;
+    }
+
+    .wrapper-footer-page:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .txt-copyright {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Collections</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Pages/_p-collecttions.style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c-listItemCollections.style.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-collections">
+        <div class="header-options-collection">
+          <div class="child-items-options active">All Collections</div>
+          <div class="child-items-options">Goddess</div>
+          <div class="child-items-options">Fanart</div>
+          <div class="child-items-options">Angel</div>
+          <div class="child-items-options">Game</div>
+          <div class="child-items-options">Skecth book</div>
+        </div>
+        <div class="header-title-collections">
+          <h1>All Collections</h1>
+          <div class="line-header-collections"></div>
+        </div>
+        <div id="listItem"></div>
+        <div class="line-bottom-list-collections"><p></p></div>
+        <div class="layout-announcements">
+          <div class="group-announcements">
+            <div class="bg-announcements">
+              <h1>Announcements:</h1>
+              <div class="form-item-announcements">
+                <div class="bg-child-item">
+                  <div class="c_descriptions">
+                    <img
+                      src="../../images/img/Announcements1.png"
+                      alt="Announcements"
+                    />
+                    <div class="wrapper-title-descriptions">
+                      <div class="bg-text-announcements-collections">
+                        <p class="active">🎉 NEW AVAILABLE 12/07/2022</p>
+                        <h1>ENCANTO COLLECTIONS</h1>
+                      </div>
+                      <p>
+                        A full-set Encanto includes 15 photo prints of beautiful
+                        and amazing characters in the show are now available!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn-shop-now">SHOP NOW</div>
+                </div>
+                <div class="bg-child-item active">
+                  <div class="c_descriptions">
+                    <img
+                      src="../../images/img/Announcements2.png"
+                      alt="Announcements"
+                    />
+                    <div class="wrapper-title-descriptions">
+                      <div class="bg-text-announcements-collections">
+                        <p class="active">🎉NEW AVAILABLE 23/06/2022</p>
+                        <h1>GENSHIN COLLECTIONS</h1>
+                      </div>
+                      <p>
+                        A full-set Encanto includes 15 photo prints of beautiful
+                        and amazing characters in the show are now available!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn-shop-now">SHOP NOW</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-ourLinks">
+              <h1>Our Links:</h1>
+              <div class="form-item-ourLinks">
+                <div class="bg-child-item">
+                  <div class="c_descriptions">
+                    <img
+                      src="../../images/icon/ic-instagram.svg"
+                      alt="icon instagram"
+                    />
+                    <div class="wrapper-title-descriptions">
+                      <p>Instagram</p>
+                      <b>@RoytheArt</b>
+                    </div>
+                  </div>
+                  <div class="btn-view">VIEW</div>
+                </div>
+                <div class="bg-child-item">
+                  <div class="c_descriptions">
+                    <img
+                      src="../../images/icon/ic-Etsy.svg"
+                      alt="icon instagram"
+                    />
+                    <div class="wrapper-title-descriptions">
+                      <p>Etsy</p>
+                      <b>Shop: RoyTheArt</b>
+                    </div>
+                  </div>
+                  <div class="btn-view">VIEW</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-discount">
+            <img
+              src="../../images/img/Announcements-discount.png"
+              alt="Announcements discount"
+            />
+            <div class="bg-descriptions">
+              <h1>20% OFF 🎉</h1>
+              <p>Get discount code in our website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript(
+        "../../components/Collections/listItemCollections.html",
+        "listItem"
+      );
+    }
+  </script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Event</title>
+    <link rel="stylesheet" href="../../styles/Pages/_p-event.style.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c-itemEvent.style.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-main-event">
+        <!-- Header -->
+        <div class="header-main-event">
+          <div class="event-header">
+            <img src="../../images/icon/ic-rate-shop.svg" alt="icon rate" />
+            <span>Event</span>
+          </div>
+          <div class="line-header"></div>
+          <div class="btn-header-events">
+            <div class="btn-item">Upcoming</div>
+            <div class="btn-item">My Events</div>
+          </div>
+        </div>
+        <!-- Upcoming -->
+        <div class="wrapper-listItem-event">
+          <div class="tlt-header-child-item">
+            <div class="line-txt-child"></div>
+            <p>Upcoming</p>
+            <div class="line-txt-child"></div>
+          </div>
+          <div id="Event"></div>
+        </div>
+        <!-- My Events -->
+        <div class="wrapper-listItem-event active">
+          <div class="tlt-header-child-item">
+            <div class="line-txt-child"></div>
+            <p>My Events</p>
+            <div class="line-txt-child"></div>
+          </div>
+          <div id="my-event"></div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript("../../components/Event/ItemEvent.html", "Event");
+      loadScript("../../components/Event/myEvent.html", "my-event");
+    }
+  </script>
+</html>

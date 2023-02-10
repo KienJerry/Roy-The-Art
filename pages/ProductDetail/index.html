@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/Pages/_p-productDetail.style.css" />
+    <link rel="stylesheet" href="../../styles/components/select-option.css" />
+    <link rel="stylesheet" href="../../styles/components/paginate-reviews.css" />
+    <script src="../../assets/loadhtml.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <div id="header"></div>
+    <div class="wrapper-product-detail">
+        <div class="section-product-detail">
+            <div class="product-detail-left">
+                <div id="list-items-sub" class="list-items-sub">
+                    <div class="item-image-products active">
+                        <img src="../../images/img/Announcements1.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection1.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection2.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection3.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection4.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection5.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection6.png" />
+                    </div>
+                    <div class="item-image-products">
+                        <img src="../../images/img/CategoryCollection7.png" />
+                    </div>
+                </div>
+                <div class="parent-items-main">
+                    <div class="parent-icon-items">
+                        <img id="icon-items-main" class="icon-items-main"
+                            src="../../images/product/product-show-1.png" />
+                    </div>
+                    <div id="arrow-product-left" class="arrow-product-left">
+                        <img src="../../images/product/arrow-product-left.png" />
+                    </div>
+                    <div id="arrow-product-right" class="arrow-product-right">
+                        <img src="../../images/product/arrow-product-right.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-right">
+                <div class="row-favorite">
+                    <img src="../../images/product/ic-tym.svg" />
+                    <div class="txt-favorite">Favorite item</div>
+                </div>
+                <div class="row-seller">
+                    <div class="box-saller">
+                        <img src="../../images/product/ic-star.svg" />
+                        <div class="txt-best-seller">Best seller</div>
+                    </div>
+                    <div class="slash">|</div>
+                    <div class="sales">12,000 sales</div>
+                    <div class="slash">|</div>
+                    <div class="row-star-fill">
+                        <img src="../../images/product/ic-star-fill.svg" />
+                        <img src="../../images/product/ic-star-fill.svg" />
+                        <img src="../../images/product/ic-star-fill.svg" />
+                        <img src="../../images/product/ic-star-fill.svg" />
+                        <img src="../../images/product/ic-star-fill.svg" />
+                    </div>
+                </div>
+                <div class="row-name-product">
+                    <div class="txt-name-product">
+                        GENSHIN IMPACT - Wanderder SCARAMOUCHE 2022 | Photo Prints | Roy
+                        The Art | Fan Art <span class="txt-red">Only 1 left</span>
+                    </div>
+                </div>
+                <div class="row-price">
+                    <div class="txt-price">12,283,472₫</div>
+                </div>
+                <div class="row-size">
+                    <div class="txt-size">Chọn size</div>
+                    <div id="select-option-size"></div>
+                </div>
+                <div class="row-quantity">
+                    <div class="txt-quantity">Quantity</div>
+                    <input class="input-control" type="number" value="1" min="1" max="50" />
+                </div>
+                <div class="row-button">
+                    <img class="bg-btn-color" src="../../images/homepage/btn-redirect-shop.svg" />
+                    <div class="group-txt-buynow">
+                        <div class="txt-buynow">Buy now</div>
+                        <img class="icon-buynow" src="../../images/public/ic-cart-color.svg" />
+                    </div>
+                </div>
+                <div class="row-button" id="handleAddToCart" style="cursor: pointer">
+                    <img class="bg-btn-color" src="../../images/homepage/btn-view-collection.svg" />
+                    <div class="group-txt-buynow">
+                        <div class="txt-addcart">Add to cart</div>
+                        <img class="icon-buynow" src="../../images/public/ic-cart-white.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-product-detail-description">
+            <div class="product-detail-left">
+                <div>
+                    <div class="row-reviews">
+                        <div class="txt-reviews">1,000 reviews</div>
+                        <div class="row-star-fill">
+                            <img src="../../images/product/ic-star-fill.svg" />
+                            <img src="../../images/product/ic-star-fill.svg" />
+                            <img src="../../images/product/ic-star-fill.svg" />
+                            <img src="../../images/product/ic-star-fill.svg" />
+                            <img src="../../images/product/ic-star-fill.svg" />
+                        </div>
+                    </div>
+                    <div class="parent-list-reviews">
+                        <div class="row-comments">
+                            <div class="row-star-comments">
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                            </div>
+                            <div class="txt-comments">
+                                Lorem ipsum dolor sit amet consectetur. Semper aenean odio
+                                proin a. Condimentum egestas elit consectetur ornare potenti
+                                elementum amet consequat.
+                            </div>
+                            <div class="row-avt-comments">
+                                <img class="icon-avt-comments" src="../../images/product/avt-comments.svg" />
+                                <div class="txt-avt-comments">Jerry Hen</div>
+                                <div class="txt-date-comments">Dec 12, 2022</div>
+                            </div>
+                        </div>
+                        <div class="row-comments">
+                            <div class="row-star-comments">
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                            </div>
+                            <div class="txt-comments">
+                                Lorem ipsum dolor sit amet consectetur. Semper aenean odio
+                                proin a. Condimentum egestas elit consectetur ornare potenti
+                                elementum amet consequat.
+                            </div>
+                            <div class="row-avt-comments">
+                                <img class="icon-avt-comments" src="../../images/product/avt-comments.svg" />
+                                <div class="txt-avt-comments">Jerry Hen</div>
+                                <div class="txt-date-comments">Dec 12, 2022</div>
+                            </div>
+                            <div class="row-avt-comments ND">
+                                <div class="bg-avt">
+                                    <img class="icon-avt-comments" src="../../images/img/avt-comments-tuss.svg" />
+                                    <div class="txt-avt-comments">Roy the Art</div>
+                                </div>
+                                <div class="txt-comments">
+                                    Lorem ipsum dolor sit amet consectetur. Semper aenean odio proin a. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-comments">
+                            <div class="row-star-comments">
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-fill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                                <img class="star-comments" src="../../images/product/ic-star-nofill.svg" />
+                            </div>
+                            <div class="txt-comments">
+                                Lorem ipsum dolor sit amet consectetur. Semper aenean odio
+                                proin a. Condimentum egestas elit consectetur ornare potenti
+                                elementum amet consequat.
+                            </div>
+                            <div class="row-avt-comments">
+                                <img class="icon-avt-comments" src="../../images/product/avt-comments.svg" />
+                                <div class="txt-avt-comments">Jerry Hen</div>
+                                <div class="txt-date-comments">Dec 12, 2022</div>
+                            </div>
+                        </div>
+                        <div class="row-comments">
+                            <div class="paginate-reviews">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-photo-reviews">
+                        <div class="txt-photo-reviews">Photos from reviews</div>
+                        <div class="parent-photo-reviews">
+                            <img class="photo-reviews" src="../../images/product/photo-reviews.png" />
+                            <img class="photo-reviews" src="../../images/product/photo-reviews.png" />
+                            <img class="photo-reviews" src="../../images/product/photo-reviews.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-right">
+                <div class="row-description">
+                    <div id="txt-description-main" class="txt-description-main">
+                        <div>Detail</div>
+                        <img class="ic-arrow-down" src="../../images/product/collapse-white.svg" onclick="HandleDetail()" style="cursor: pointer;" />
+                        <img class="ic-arrow-up" src="../../images/icon/ic-Down-Arrow-grey.svg" onclick="HandleDetailHide()" style="cursor: pointer;" />
+                    </div>
+                    <div id="txt-description-text" class="txt-description-text active">
+                        Genshin Impact is one of the most recommended fan art collections
+                        so far and in order to depict the characters more accurately, I
+                        decided to join the journey and started exploring the game last
+                        month. It has been a great experience for me and I love immersing
+                        myself in the story and adventures of each character line in
+                        different worlds. I will try my hand at this fan art and along
+                        with the set of newly rendered posters, I challenge myself to try
+                        drawing the chibi versions and skill sets of each character.
+                    </div>
+                    <div class="Decription-Detail">
+                        Decription
+                        <img class="ic-arrow-downs" src="../../images/product/collapse-white.svg" alt="icon" onclick="HandleDescDetailHide()" style="cursor: pointer;" >
+                        <img class="ic-arrow-ups" src="../../images/icon/ic-Down-Arrow-grey.svg" alt="icon" onclick="HandleDescDetail()" style="cursor: pointer;" >
+                    </div>
+                    <div id="txt-description-texts" class="txt-description-texts">
+                        Genshin Impact is one of the most recommended fan art collections
+                        so far and in order to depict the characters more accurately, I
+                        decided to join the journey and started exploring the game last
+                        month. It has been a great experience for me and I love immersing
+                        myself in the story and adventures of each character line in
+                        different worlds. I will try my hand at this fan art and along
+                        with the set of newly rendered posters, I challenge myself to try
+                        drawing the chibi versions and skill sets of each character.
+                    </div>
+                </div>
+                <div class="row-description">
+                    <div class="txt-description-main">
+                        <div>Shipping and return policies</div>
+                        <img class="ic-arrow-downss" src="../../images/product/collapse-white.svg" onclick="HandleShipDetail()" style="cursor: pointer;" />
+                        <img class="ic-arrow-upss" src="../../images/icon/ic-Down-Arrow-grey.svg" onclick="HandleShipDetailHide()" style="cursor: pointer;" />
+                    </div>
+                    <div class="box-description-cost">
+                        <div>
+                            <div class="txt-name-cost">Cost to ship</div>
+                            <div class="txt-price-cost">100.000đ</div>
+                        </div>
+                        <div class="txt-note-cost">
+                            Lorem ipsum dolor sit amet consectetur. Semper aenean odio proin
+                            a. Condimentum egestas elit consectetur.
+                        </div>
+                        <div class="deliver-bg">
+                            Deliver to Vietnam
+                            <!-- <img src="../../images/icon/ic-Down-Arrow-grey.svg" alt="icon"> -->
+                            <img class="ic-arrow-downsa" src="../../images/product/collapse-white.svg" alt="icon" onclick="HandleDeliverHide()" style="cursor: pointer;" >
+                            <img class="ic-arrow-upsa" src="../../images/icon/ic-Down-Arrow-grey.svg" alt="icon" onclick="HandleDeliver()" style="cursor: pointer;" >
+                        </div>
+                        <div id="Deliver">
+                            <div class="txt-name-cost">Country</div>
+                            <div id="select-option-country"></div>
+                        </div>
+                        <div id="Delivers" class="btn-primary-color">SUBMIT</div>
+                        <div id="Deliverss" class="txt-name-cost">Ships from Australia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="relateCategory"></div>
+        <div id="otherCategory"></div>
+    </div>
+    <div class="wapper-modal-cart" id="wapper-modal-cart">
+        <div class="background-modal">
+            <div class="container-header-modal">
+                <img src="../../images/img/CategoryCollection.png" alt="CategoryCollection" />
+                <img class="tick" src="../../images/icon/ic-tick-green.svg" alt="icon">
+                <p>1 item added to cart</p>
+            </div>
+            <a href="/pages/Cart/ShoppingCart.html" class="btn-view-cart">View Cart & Check Out</a>
+            <div class="btn-keep-shopping" id="btn-keep-shopping">
+                Keep Shopping
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../assets/SelectOption/index.js"></script>
+    <script src="../../assets/PaginateReviews/index.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        const myFunction = () => {
+            loadScript("../../components/header.html", "header");
+            loadScript("../../components/footer.html", "footer");
+            loadScript(
+                "../../components/Collections/ListRelateCollections.html",
+                "relateCategory"
+            );
+            loadScript(
+                "../../components/Collections/OtherCollections.html",
+                "otherCategory"
+            );
+
+            const sizeItems = ["2 x 3 inches", "4 x 3 inches", "3 x 5 inches"];
+            loadSelectOption(
+                "select-option-size",
+                "input-option-size",
+                "items-option-size",
+                "select-size",
+                sizeItems
+            );
+
+            const countryItems = ["Viet Name", "Singapore", "Hong Kong"];
+            loadSelectOption(
+                "select-option-country",
+                "input-option-country",
+                "items-option-country",
+                "select-country",
+                countryItems
+            );
+        };
+
+        // document.getElementById('txt-description-main').addEventListener('click', () => {
+        //     document.getElementById('txt-description-text').classList.add('show');
+        // })
+
+        const imageProducts = document.getElementsByClassName(
+            "item-image-products"
+        );
+        const BACK = "back";
+        const NEXT = "next";
+
+        const handleArrowImage = () => {
+            document
+                .getElementById("arrow-product-left")
+                .addEventListener("click", () => {
+                    if (imageProducts[0].classList.contains("active")) {
+                        return;
+                    }
+                    handleArrowSub(BACK);
+                    const listItemsSub = document.getElementById("list-items-sub");
+                    listItemsSub.scrollTop -= 105;
+                });
+
+            document
+                .getElementById("arrow-product-right")
+                .addEventListener("click", () => {
+                    if (
+                        imageProducts[imageProducts.length - 1].classList.contains(
+                            "active"
+                        )
+                    ) {
+                        return;
+                    }
+                    handleArrowSub(NEXT);
+                    const listItemsSub = document.getElementById("list-items-sub");
+                    listItemsSub.scrollTop += 105;
+                });
+        };
+
+        const handleArrowSub = (item) => {
+            let index = 0;
+            for (let i = 0; i < imageProducts.length; i++) {
+                if (imageProducts[i].classList.contains("active")) {
+                    imageProducts[i].classList.remove("active");
+                    index = item === BACK ? i - 1 : i + 1;
+                    break;
+                }
+            }
+            imageProducts[index].classList.add("active");
+            document.getElementById("icon-items-main").src =
+                imageProducts[index].getElementsByTagName("img")[0].src;
+        };
+
+        const handleImageProduct = () => {
+            for (let i = 0; i < imageProducts.length; i++) {
+                imageProducts[i].addEventListener("click", () => {
+                    for (let j = 0; j < imageProducts.length; j++) {
+                        imageProducts[j].classList.remove("active");
+                    }
+                    imageProducts[i].classList.add("active");
+                    document.getElementById("icon-items-main").src =
+                        imageProducts[i].getElementsByTagName("img")[0].src;
+                });
+            }
+        };
+
+        handleImageProduct();
+        handleArrowImage();
+    </script>
+</body>
+
+</html>

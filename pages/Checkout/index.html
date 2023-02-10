@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/Pages/_p-checkout.style.css">
+    <link rel="stylesheet" href="../../styles/components/select-option.css">
+    <link rel="stylesheet" href="../../styles/components/_c-ListProd.style.css">
+    <script src="../../assets/loadhtml.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <div id="header"></div>
+    <div class="wrapper-checkout">
+        <div class="group-process-checkout">
+            <div class="parent-process-checkout">
+                <div class="box-image-process-checkout process-checkout"><img class="image-process-checkout"
+                        src="../../images/checkout/ic-car.svg" alt=""></div>
+                <div class="txt-process active">Checkout</div>
+            </div>
+            <div class="group-line-process">
+                <div class="line-process"></div>
+            </div>
+            <div class="parent-process-checkout">
+                <div class="box-image-process-checkout process-checkout"><img src="../../images/checkout/ic-payment.svg"
+                        alt=""></div>
+                <div class="txt-process">Payment</div>
+            </div>
+            <div class="group-line-process">
+                <div class="line-process"></div>
+            </div>
+            <div class="parent-process-checkout">
+                <div class="box-image-process-checkout process-checkout"><img src="../../images/checkout/ic-check.svg"
+                        alt=""></div>
+                <div class="txt-process">Check</div>
+            </div>
+            <div class="group-line-process">
+                <div class="line-process"></div>
+            </div>
+            <div class="parent-process-checkout">
+                <div class="box-image-process-checkout process-checkout"><img
+                        src="../../images/checkout/ic-double-check.svg" alt="">
+                </div>
+                <div class="txt-process">Done</div>
+            </div>
+        </div>
+    </div>
+    <div id="group-checkout" class="group-process-body group-checkout">
+        <div class="txt-checkout-main">Enter your shipping address</div>
+        <div>
+            <div class="txt-input-process">Contry<span class="required">*</span></div>
+            <div id="select-option-country" style="display: none;"></div>
+            <div class="box-relative">
+                <input class="input-control" type="text" value="Vietnam" disabled />
+                <img src="../../images/icon/ic-down-arrow.svg" alt="icon ">
+            </div>
+        </div>
+        <div>
+            <div class="txt-input-process">Full name<span class="required">*</span></div>
+            <input class="input-control" type="text" />
+        </div>
+        <div>
+            <div class="txt-input-process">Phone number<span class="required">*</span></div>
+            <input class="input-control" type="text" />
+        </div>
+        <div>
+            <div class="txt-input-process">Street address<span class="required">*</span></div>
+            <input class="input-control" type="text" />
+        </div>
+        <div>
+            <div class="txt-input-process">City<span class="required">*</span></div>
+            <input class="input-control" type="text" />
+        </div>
+        <div class="form-control-column-2">
+            <div class="flex-1">
+                <div class="txt-input-process">Province<span class="required">*</span></div>
+                <div id="select-option-province"></div>
+            </div>
+            <div class="flex-1">
+                <div class="txt-input-process">Postal code<span class="required">*</span></div>
+                <input class="input-control" type="text" />
+            </div>
+        </div>
+        <div id="btn-checkout" class="btn-primary-color">PAYMENT</div>
+    </div>
+    <div id="group-payment" class="group-process-body group-payment d-none">
+        <div>
+            <div class="txt-checkout-main">Choose a payment method</div>
+            <div class="txt-checkout-sub">
+                You will not be charged until
+                you review this order on the next page.
+            </div>
+        </div>
+        <div class="line-payment"></div>
+        <div class="box-choose-cash">
+            <div class="box-txt-cash">
+                <div id="checkbox-cash" class="checkbox-cash">
+                    <div class="border-cash-outside">
+                        <div id="border-cash-inside" class="border-cash-inside"></div>
+                    </div>
+                </div>
+                <div class="txt-cash">Pay with Cash</div>
+            </div>
+            <div>
+                <img src="../../images/checkout/ic-cash.svg" />
+            </div>
+        </div>
+        <div class="txt-checkout-sub">You will pay when you reciept the product(s)</div>
+        <div id="btn-payment" class="btn-primary-color">REVIEW THE ORDER</div>
+    </div>
+    <div id="group-checking" class="group-process-body d-none">
+        <div class="group-checking">
+            <div class="box-checking-left">
+                <div class="txt-checkout-main active">Please confirm and submit your order</div>
+                <div class="txt-shipping-address">Shipping address</div>
+                <div class="txt-place-address">23/224 Phan Văn Trị, Gò Vấp, Hồ Chí Minh, Vietnam</div>
+                <div class="box-cash-change">
+                    <img src="../../images/checkout/ic-pencil.svg" />
+                    <div class="txt-change">Change</div>
+                </div>
+                <div class="txt-shipping-address">Payment method</div>
+                <div class="box-cash-change">
+                    <img src="../../images/checkout/ic-cash.svg" />
+                    <div class="txt-cash">Cash</div>
+                </div>
+            </div>
+            <div class="box-checking-right">
+                <div class="txt-order-summary">Order summary</div>
+                <div class="row-order-checking">
+                    <div class="txt-order-name">Item(s) total:</div>
+                    <div class="txt-order-result">431,035đ</div>
+                </div>
+                <div class="row-order-checking" style="margin-top: 12px;">
+                    <div class="txt-order-name">Shipping</div>
+                    <div class="txt-order-result">310,000đ</div>
+                </div>
+                <div class="row-order-checking bottom">
+                    <div class="txt-order-name">Tax:</div>
+                    <div class="txt-order-result">0đ</div>
+                </div>
+                <div class="row-order-checking">
+                    <div class="txt-order-name" style="font-weight: 400;">Order total (2 items): <br><span
+                            class="shipto">Local taxes included
+                            (where applicable)</span></div>
+                    <div class="txt-order-result active">741,035đ</div>
+                </div>
+                <div id="btn-paycheck" class="btn-primary-color" style="margin-top: 12px;">
+                    Confirm Order
+                </div>
+            </div>
+        </div>
+        <div class="group-checking-bottom">
+            <div class="txt-products">Product(s)</div>
+            <div id="list-Prod"></div>
+            <div class="wappper-box-method">
+                <div class="item-box-method">
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">This order is a gift</label><br>
+                    </div>
+                    <span>Prices will not be shown on backing slip</span>
+                </div>
+                <div class="item-box-method active">
+                    <b>Shipping method</b>
+                    <div class="box-txt-cashs">
+                        <div class="bg-label">
+                            <div id="checkbox-cashs" class="checkbox-cashs">
+                                <div class="border-cash-outsides active" id="border-cash-outsides">
+                                    <div id="border-cash-insides" class="border-cash-insides active"></div>
+                                </div>
+                            </div>
+                            <div class="txt-cashs">Pay with Cash
+                                <span>Estimated delivery: Feb 22 to Mar 7, 2023</span>
+                            </div>
+                        </div>
+                        <div class="price-txt">310,000đ</div>
+                    </div>
+                    <div class="box-txt-cashs">
+                        <div class="bg-label">
+                            <div id="checkbox-cashss" class="checkbox-cashs">
+                                <div class="border-cash-outsides" id="border-cash-outsidess">
+                                    <div id="border-cash-insidess" class="border-cash-insides"></div>
+                                </div>
+                            </div>
+                            <div class="txt-cashs">Express International
+                                <span>Estimated delivery: Feb 13 - 17, 2023</span>
+                            </div>
+                        </div>
+                        <div class="price-txt">483,000đ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="group-done" class="group-process-body group-done d-none">
+        <div class="parent-information-done">
+            <div class="txt-checkout-main">Your order is being processed, thank you for trusting Us</div>
+            <div class="txt-information-your">Information your order</div>
+            <div class="box-information-your">
+                <div class="txt-information">Order code:</div>
+                <div class="txt-result">#23565443</div>
+            </div>
+            <div class="box-information-your">
+                <div class="txt-information">Phone number:</div>
+                <div class="txt-result">0987654321</div>
+            </div>
+            <div class="box-information-your">
+                <div class="txt-information">Shipping address:</div>
+                <div class="txt-result">23/224 Phan Văn Trị, Gò Vấp, Hồ Chí Minh, Vietnam</div>
+            </div>
+        </div>
+        <div class="group-checking-bottom">
+            <div class="txt-products">Product(s)</div>
+            <div id="list-Prods"></div>
+            <div class="line-bottom"></div>
+            <div class="wapper-layout-done">
+                <div class="item-layout-done"></div>
+                <div class="item-layout-done">
+                    <div class="top-item-layout">
+                        <div class="chil-item">
+                            <p>Item(s) total:</p>
+                            <span>12,000,000đ</span>
+                        </div>
+                        <div class="chil-item">
+                            <p class="active">Shipping
+                                <span>( to Viet nam)</span>
+                            </p>
+                            <span>100,000đ</span>
+                        </div>
+                        <div class="chil-item">
+                            <p>Tax:</p>
+                            <span>0đ</span>
+                        </div>
+                    </div>
+                    <div class="top-item-layout active">
+                        <div class="chil-item">
+                            <p class="active">Item(s) total:</p>
+                            <span class="active">12,000,000đ</span>
+                        </div>
+                        <span>Local taxes included (where applicable)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+    <script src="../../assets/SelectOption/index.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        const myFunction = () => {
+            loadScript("../../components/header.html", "header");
+            loadScript("../../components/footer.html", "footer");
+            loadScript("../../components/Cart/ListProd.html", "list-Prod");
+            loadScript("../../components/Cart/ListProd.html", "list-Prods");
+
+            const countryItems = ['Viet Name', 'Singapore', 'Hong Kong'];
+            loadSelectOption('select-option-country', 'input-option-country', 'items-option-country', 'select-country', countryItems);
+
+            const provinceItems = ['Ho Chi Minh', 'Da Nang', 'Ha Noi', 'Hai Phong'];
+            loadSelectOption('select-option-province', 'input-option-province', 'items-option-province', 'select-province', provinceItems);
+        }
+
+        let step = 0;
+        const lineProcess = document.getElementsByClassName('line-process');
+        const txtProcess = document.getElementsByClassName('txt-process');
+        const imageProcess = document.getElementsByClassName('box-image-process-checkout');
+        const groupProcessBody = document.getElementsByClassName('group-process-body');
+        const processCheckout = document.getElementsByClassName('process-checkout');
+
+        // handle click btn-checkout
+        document.getElementById('btn-checkout').addEventListener('click', () => {
+            lineProcess[0].classList.add('active');
+            txtProcess[1].classList.add('active');
+            imageProcess[1].getElementsByTagName('img')[0].src = "../../images/checkout/ic-payment-active.svg";
+            document.getElementById('group-checkout').classList.add('d-none');
+            document.getElementById('group-payment').classList.remove('d-none');
+            step = 1;
+        })
+
+        // handle click btn-payment
+        document.getElementById('btn-payment').addEventListener('click', () => {
+            lineProcess[1].classList.add('active');
+            txtProcess[2].classList.add('active');
+            imageProcess[2].getElementsByTagName('img')[0].src = "../../images/checkout/ic-payment-active.svg";
+            document.getElementById('group-payment').classList.add('d-none');
+            document.getElementById('group-checking').classList.remove('d-none');
+            step = 2;
+        })
+
+        // handle click btn-paycheck
+        document.getElementById('btn-paycheck').addEventListener('click', () => {
+            lineProcess[2].classList.add('active');
+            txtProcess[3].classList.add('active');
+            imageProcess[3].getElementsByTagName('img')[0].src = "../../images/checkout/ic-double-check-active.svg";
+            document.getElementById('group-checking').classList.add('d-none');
+            document.getElementById('group-done').classList.remove('d-none');
+            step = 3;
+        })
+
+        //  handle click line process checkout
+        for (let i = 0; i < processCheckout.length; i++) {
+            processCheckout[i].addEventListener('click', () => {
+                if (step <= i) return;
+                for (let j = 0; j < groupProcessBody.length; j++) {
+                    if (!groupProcessBody[j].classList.contains('d-none')) {
+                        groupProcessBody[j].classList.add('d-none');
+                    }
+                }
+                if (i === 0) {
+                    document.getElementById('group-checkout').classList.remove('d-none');
+                } else if (i === 1) {
+                    document.getElementById('group-payment').classList.remove('d-none');
+                } else if (i === 2) {
+                    document.getElementById('group-checking').classList.remove('d-none');
+                }
+            })
+        }
+
+
+        // handle click checkbox
+        document.getElementById('checkbox-cash').addEventListener('click', (e) => {
+            document.getElementById('border-cash-inside').classList.contains('active')
+                ? document.getElementById('border-cash-inside').classList.remove('active')
+                : document.getElementById('border-cash-inside').classList.add('active')
+        })
+
+        // handle click checkbox
+        document.getElementById('checkbox-cashs').addEventListener('click', (e) => {
+            document.getElementById('border-cash-insides').classList.contains('active')
+                ? document.getElementById('border-cash-insides').classList.remove('active')
+                : document.getElementById('border-cash-insides').classList.add('active')
+
+            document.getElementById('border-cash-outsides').classList.contains('active')
+                ? document.getElementById('border-cash-outsides').classList.remove('active')
+                : document.getElementById('border-cash-outsides').classList.add('active')
+        })
+        // handle click checkbox
+        document.getElementById('checkbox-cashss').addEventListener('click', (e) => {
+            document.getElementById('border-cash-insidess').classList.contains('active')
+                ? document.getElementById('border-cash-insidess').classList.remove('active')
+                : document.getElementById('border-cash-insidess').classList.add('active')
+
+            document.getElementById('border-cash-outsidess').classList.contains('active')
+                ? document.getElementById('border-cash-outsidess').classList.remove('active')
+                : document.getElementById('border-cash-outsidess').classList.add('active')
+        })
+
+    </script>
+</body>
+
+</html>

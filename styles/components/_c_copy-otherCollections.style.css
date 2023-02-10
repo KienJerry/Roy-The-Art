@@ -1,0 +1,107 @@
+.wrapper-list-item-Other-Collection {
+  padding: 120rem 0 0 0;
+}
+
+.wrapper-list-item-Other-Collection .header-other-collections-title {
+  display: flex;
+  align-items: center;
+}
+.header-other-collections-title h1 {
+  font-weight: 600;
+  font-size: 24rem;
+  color: #242b2e;
+  width: auto;
+}
+.header-other-collections-title .line-txt-other {
+  border: 1rem solid #be8637;
+  height: 1rem;
+  background: #be8637;
+  flex: 1;
+  width: 100%;
+  margin-left: 32rem;
+}
+.wrapper-list-item-Other-Collection .bg-list-item-Other {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24rem;
+}
+.bg-list-item-Other > .child-item {
+  height: 424rem;
+  position: relative;
+  margin: 32rem 0;
+}
+.bg-list-item-Other > .child-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7rem;
+  overflow: hidden;
+}
+.bg-list-item-Other > .child-item > .bg-title-descriptions {
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  border-radius: 7rem;
+}
+.bg-title-descriptions > .box-layout-txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 24rem 24rem;
+}
+.bg-title-descriptions > .box-layout-txt p {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #ffffff;
+}
+.bg-title-descriptions > .box-layout-txt b {
+  font-weight: 600;
+  font-size: 20rem;
+  color: #ffffff;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  .wrapper-list-item-Other-Collection .bg-list-item-Other {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bg-list-item-Other > .child-item.active {
+    display: none;
+  }
+  .bg-title-descriptions > .box-layout-txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 12rem 12rem;
+  }
+  .bg-list-item-Other > .child-item {
+    height: 292rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px) {
+  .wrapper-list-item-Other-Collection {
+    padding: 100rem 0 0 0;
+  }
+  .header-other-collections-title h1 {
+    font-size: 16rem;
+  }
+  .wrapper-list-item-Other-Collection .bg-list-item-Other {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bg-list-item-Other > .child-item.actives {
+    display: none;
+  }
+  .bg-title-descriptions > .box-layout-txt p {
+    font-size: 12rem;
+  }
+  .bg-title-descriptions > .box-layout-txt b {
+    font-size: 14rem;
+  }
+  .bg-list-item-Other > .child-item {
+    height: 221rem;
+  }
+}

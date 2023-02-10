@@ -1,0 +1,124 @@
+.container-item-prod-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36rem;
+}
+.bg-upcommit-events h3 {
+  font-weight: 600;
+  font-size: 20rem;
+  text-transform: uppercase;
+  color: #242b2e;
+}
+
+.bg-list-event-commit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20rem;
+}
+
+.bg-upcommit-events {
+  display: flex;
+  padding: 16rem 0;
+  flex-direction: column;
+  row-gap: 16rem;
+  background: #ffffff;
+  border: 1rem solid rgba(38, 37, 30, 0.12);
+  border-radius: 7rem;
+}
+.bg-upcommit-events .wapper-layout-commit-event {
+  padding: 0 16rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+  font-weight: 600;
+  font-size: 16rem;
+  color: #242b2e;
+}
+.wapper-layout-commit-event .est-time {
+  color: #ecb424;
+  display: flex;
+  gap: 6rem;
+}
+.wapper-layout-commit-event .est-time > img {
+  width: 18.75rem;
+  height: 18.75rem;
+  object-fit: contain;
+}
+.bg-upcommit-events > img {
+  width: 100%;
+  height: 255rem;
+  object-fit: cover;
+}
+
+.wapper-layout-commit-event .descriptions {
+  font-weight: 400;
+  font-size: 14rem;
+  color: #242b2e;
+}
+.wapper-layout-commit-event .txt-desc {
+  font-weight: 300;
+  font-size: 16rem;
+  color: #6b8089;
+}
+.wapper-layout-commit-event .event-took {
+  font-weight: 300;
+  font-size: 14rem;
+  color: #be8637;
+}
+.wapper-layout-commit-event .line {
+  background: #6b8089;
+  height: 2rem;
+}
+.wapper-layout-commit-event .locial-events-comming {
+  display: flex;
+  gap: 8rem;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #242b2e;
+  align-items: flex-start;
+}
+.locial-events-comming > img {
+  width: 16.5rem;
+  height: 21rem;
+  object-fit: contain;
+}
+.bg-upcommit-events .btn-view-now {
+  background: #be8637;
+  border-radius: 3rem;
+  margin: 0 16rem;
+  padding: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-item-prod-events {
+    grid-template-columns: 1fr 1fr;
+    gap: 24rem;
+  }
+  .bg-upcommit-events.active {
+    display: none;
+  }
+  .bg-upcommit-events h3 {
+    font-size: 16rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container-item-prod-events {
+    grid-template-columns: 1fr;
+    gap: 24rem;
+  }
+  .bg-upcommit-events.active {
+    display: flex;
+  }
+  .bg-upcommit-events > img {
+    height: 235rem;
+  }
+}

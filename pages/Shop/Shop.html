@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy The Art | Shop</title>
+  <link rel="stylesheet" href="../../styles/Pages/_p-shop.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-countCategoryShop.style.css" />
+  <link rel="stylesheet" href="../../styles/components/_c-listProdShop.style.css" />
+</head>
+
+<body onload="myFunction()">
+  <div class="wrapper-body">
+    <div id="header"></div>
+    <div class="wrapper-shop">
+      <!-- Options left -->
+      <div class="container-options-shop">
+        <form class="wrapper-search">
+          <input class="type-input-search" type="text" placeholder="Search Item" />
+          <input class="type-icon-search" type="image" src="../../images/icon/ic-search-shop.svg" />
+        </form>
+        <div id="CountCategoryShop"></div>
+        <div class="container-encanto-collections">
+          <div class="chil-item-discriptions">
+            <img src="../../images/icon/ic-congratulation-shop.svg" alt="icon congratulation" />
+            <div class="discriptions-shop-now">
+              <p>NEW AVAILABLE</p>
+              <b>ENCANTO COLLECTIONS</b>
+            </div>
+          </div>
+          <div class="btn-shopNow">SHOP NOW</div>
+        </div>
+        <div class="bg-discount-code-shop">
+          <img src="../../images/img/Announcements-discount.png" alt="Announcements-discount" />
+          <div class="bg-txt-discount-shop"></div>
+          <div class="container-title-descriptions">
+            <h1>20% OFF 🎉</h1>
+            <p>Get discount code in our website</p>
+          </div>
+        </div>
+      </div>
+      <!-- List Prod right -->
+      <div class="container-prod-shop">
+        <div class="wrapper-Featured-Collections">
+          <div class="header-featured-shop">
+            <div class="bg-txt-featured-collections">
+              <img src="../../images/icon/ic-rate-shop.svg" alt="icon rate" />
+              <h1>Featured Collections</h1>
+            </div>
+            <div class="line-header-featured-shop"></div>
+            <div class="btn-menu-fearured-shop" id="btnMenu">
+              <img src="../../images/icon/ic-navbar-menu.svg" alt="ic menu" />
+            </div>
+            <div id="custom-modal" class="custom-modal-shop" style="display: none">
+              <div id="myModal"></div>
+            </div>
+          </div>
+          <div class="container-main-prod-shop">
+            <a href="/pages/ProductDetail/index.html" class="wrapper-item-main-shop">
+              <img src="../../images/img/Announcements-discount.png" alt="Announcements discount" />
+              <h1>
+                FULL SET Sailor Moon Photo Print | Roy The Art 2021 | Unique
+                set for girls | Photo set
+              </h1>
+              <h2>12,283,472₫+</h2>
+              <p>Only 1 left</p>
+            </a>
+            <a href="/pages/ProductDetail/index.html" class="wrapper-item-main-shop active">
+              <img src="../../images/img/img-prod-shop.png" alt="Announcements discount" />
+              <h1>
+                FULL SET Sailor Moon Photo Print | Roy The Art 2021 | Unique
+                set for girls | Photo set
+              </h1>
+              <div class="f-box-price">
+                <h2>12,283,472₫+</h2>
+                <div class="best-select">
+                  <img src="../../images/icon/ic-rate-orange-bestSelect.svg" alt="icon best select" />
+                  <span>Best seller</span>
+                </div>
+              </div>
+              <p>Only 1 left</p>
+            </a>
+          </div>
+          <div class="wrapper-item-bot-shop">
+            <div class="child-item-bot-prod-shop">
+              <img src="../../images/img/Announcements-discount.png" alt="Announcements discount" />
+              <h1>FULL SET Sailor Moon Photo Print | Roy The</h1>
+              <div class="f-box-price">
+                <h2>12,283,472₫+</h2>
+                <div class="best-select">
+                  <img src="../../images/icon/ic-rate-orange-bestSelect.svg" alt="icon best select" />
+                  <span>Best seller</span>
+                </div>
+              </div>
+              <p>Only 1 left</p>
+            </div>
+            <div class="child-item-bot-prod-shop">
+              <img src="../../images/img/CategoryCollection1.png" alt="Announcements discount" />
+              <h1>FULL SET Sailor Moon Photo Print | Roy The</h1>
+              <div class="f-box-price">
+                <h2>12,283,472₫+</h2>
+              </div>
+              <p>Only 1 left</p>
+            </div>
+            <div class="child-item-bot-prod-shop actives">
+              <img src="../../images/img/CategoryCollection2.png" alt="Announcements discount" />
+              <h1>FULL SET Sailor Moon Photo Print | Roy The</h1>
+              <div class="f-box-price">
+                <h2>12,283,472₫+</h2>
+              </div>
+              <p>Only 1 left</p>
+            </div>
+            <div class="child-item-bot-prod-shop active">
+              <img src="../../images/img/CategoryCollection3.png" alt="Announcements discount" />
+              <h1>FULL SET Sailor Moon Photo Print | Roy The</h1>
+              <div class="f-box-price">
+                <h2>12,283,472₫+</h2>
+              </div>
+              <p>Only 1 left</p>
+            </div>
+          </div>
+        </div>
+        <div id="ListProd"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+<script src="../../assets/loadhtml.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/Shop/Shop.js"></script>
+<script>
+  function myFunction() {
+    loadScript("../../components/header.html", "header");
+    loadScript("../../components/footer.html", "footer");
+    loadScript(
+      "../../components/Shop/CountCategoryShop.html",
+      "CountCategoryShop"
+    );
+    loadScript("../../components/Shop/CountCategoryShop.html", "myModal");
+    loadScript("../../components/Shop/ListProdShop.html", "ListProd");
+  }
+</script>
+
+</html>

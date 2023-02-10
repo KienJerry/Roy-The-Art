@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy The Art | Collection Details</title>
+    <link
+      rel="stylesheet"
+      href="../../styles/Pages/_p-collectionDetails.style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/_c_copy-otherCollections.style.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper-body">
+      <div id="header"></div>
+      <div class="wrapper-layout-Details-Collections">
+        <div id="options"></div>
+        <div class="bg-deital-Colllections">
+          <div class="box-size-img-details-collections" id="ShowImg">
+            <img
+              src="../../images/img/img-deltail-collections.png"
+              alt="deltail collections"
+            />
+          </div>
+          <div class="box-desscriptions-detail-collections">
+            <div class="wrapper-instagram-time-upload">
+              <div class="btn-instagram">
+                <img
+                  src="../../images/icon/ic-instagram-line.svg"
+                  alt="icon instagram"
+                />
+                <p>Instagram</p>
+              </div>
+              <p>Uploaded on 23 June 2022</p>
+            </div>
+            <h1>✦ GENSHIN IMPACT FANART – YAE MIKO ✦</h1>
+            <p>
+              Genshin Impact is one of the most recommended fan art collections
+              so far and in order to depict the characters more accurately, I
+              decided to join the journey and started exploring the game last
+              month. It has been a great experience for me and I love immersing
+              myself in the story and adventures of each character line in
+              different worlds. I will try my hand at this fan art and along
+              with the set of newly rendered posters, I challenge myself to try
+              drawing the chibi versions and skill sets of each character.
+            </p>
+            <h2>Alternative Version</h2>
+            <img
+              src="../../images/img/img-detail-collections-1.png"
+              alt="images collections"
+            />
+            <p>
+              The first character of the series is Yae Miko, an electro
+              character living in the world of Inazuma. Miko oversees the Grand
+              Narukami Shrine and is the owner of the Yae Publishing House.
+              Being one of high position in all of Inazuma, she is able to
+              summon kitsune spirits or lightning strikes to destroy enemies.
+            </p>
+          </div>
+        </div>
+        <div id="listCategory"></div>
+        <div id="relateCategory"></div>
+        <div id="otherCollections"></div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <div class="modal-img" style="display: none;" id="myImg">
+      <div class="bg-img">
+        <img src="../../images/img/img-deltail-collections.png" alt="deltail" />
+        <div class="box-txt-modal">
+          <p>✦ GENSHIN IMPACT FANART – YAE MIKO ✦</p>
+          <div class="btn-instagram">
+            <img
+              src="../../images/icon/ic-instagram-white.svg"
+              alt="instagram"
+            />
+            <span>Instagram</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../../assets/loadhtml.js"></script>
+  <script src="../../assets/Collections/ModalCollection.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    function myFunction() {
+      loadScript("../../components/header.html", "header");
+      loadScript("../../components/footer.html", "footer");
+      loadScript(
+        "../../components/Collections/OptionCollections.html",
+        "options"
+      );
+      loadScript(
+        "../../components/Collections/listCategoryCollections.html",
+        "listCategory"
+      );
+      loadScript(
+        "../../components/Collections/ListRelateCollections.html",
+        "relateCategory"
+      );
+      loadScript(
+        "../../components/Collections/OtherCollections.html",
+        "otherCollections"
+      );
+    }
+  </script>
+</html>
